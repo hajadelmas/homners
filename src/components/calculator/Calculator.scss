@@ -1,0 +1,54 @@
+
+
+small {
+    font-weight: lighter;
+    color: black;
+    margin: 0;
+}
+  
+  
+  
+.flex {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.App {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // text-align: center;
+    margin-left: 3em;
+    // border-radius: 0.5rem;
+    width: 100%;
+
+    h4 {
+        color: #0099CE;
+        font-size: clamp(1rem, 6vw, 1.6rem);
+    }
+
+    @media screen and (max-width: 768px){
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
+        padding: 1em;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+  
+.input-range__label--max {
+    display: none;
+}
+  
+.input-range__label--min {
+    display: none;
+}
+  
+.input-range__label-container {
+    // left: -50%;
+    position: relative;
+    display: none;
+}

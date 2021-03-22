@@ -1,0 +1,122 @@
+@import './global.scss';
+
+.home_padding {
+    padding: 0 4em;
+}
+
+.desc {
+    margin-top: 2em;
+    padding: 0 4em;
+
+    h1 {
+        font-size: $bigTitles;
+        text-transform: uppercase;
+        color: $primary-color;
+    }
+
+    p {
+        font-size: $normalText;
+        text-align: justify;
+    }
+}
+
+.atouts {
+    margin-top: 5em;
+
+    h1 {
+        font-size: $bigTitles;
+        color: $secondary-color;
+        text-transform: uppercase;
+    }
+
+    .color_container {
+        width: 100%;
+        height: 50vh;
+        background-color: $primary-color;
+    }
+
+}
+
+.calculs {
+
+    h1 {
+        font-size: $bigTitles;
+        color: $primary-color;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: $normalText;
+        text-align: justify;
+    }
+
+    .calculs_container {
+        margin-top: 3em;
+        width: 100%;
+        display: flex;
+        
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+
+}
+
+.etapes {
+    width: 100vw;
+    h1 {
+        text-transform: uppercase;
+        font-size: clamp(1.8rem, 5vw, 3.8rem);
+        color: $primary-color;
+        text-align: center;
+    }
+
+    .etapes_container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+        .carre_box {
+        position: relative;
+        height: 400px;
+        width: 35%;
+        overflow: hidden;
+        margin-bottom: 4em;
+        
+        .carre_image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            object-fit: cover;
+            
+            transition: transform .7s ease-in-out;
+            overflow: hidden;
+
+            &:hover {
+                transform: scale(1.5);
+            }
+
+        }
+        
+        h3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -90%);
+            width: 100%;
+            color: white;
+            background: rgba($color: #000000, $alpha: 0.5);
+            font-size: clamp(1.1rem, 6vw, 1.4rem);
+            text-align: center;
+            padding: 2em 0;
+        }
+    }
+    }
+
+
+}
