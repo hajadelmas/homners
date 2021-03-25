@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import { graphql } from "gatsby"
 
 
-const product =  data  => {
+export default ({ data }) => {
 //   const { title, date } = data.markdownRemark.frontmatter
 //   const __html = data.markdownRemark.html
 //   const { prev, next } = pageContext
@@ -20,8 +20,6 @@ const { titre, description } = data.datoCmsProduct
     </Layout>
   )
 }
-
-export default product
 
 export const query = graphql`
     query($slug: String!) {

@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import { graphql } from "gatsby"
 
 
-const post = data  => {
+export default ({ data }) => {
 
   const { titre, description } = data.datoCmsPost
 
@@ -17,8 +17,6 @@ const post = data  => {
     </Layout>
   )
 }
-
-export default post
 
 export const QueryPost = graphql`
     query($slug: String!) {

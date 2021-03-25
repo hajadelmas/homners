@@ -13,23 +13,23 @@ import '../styles/index.scss'
 const IndexPage = ({ data }) => {
 
 
-  // const content = data.allDatoCmsPost.edges.map(({ node: post }) => (
-  //   <div key={post.id}>
-  //     <h3>{post.titre}</h3>
-  //     <p>{post.description}</p>
-  //     <Link to={post.slug}>Aller blog</Link>
-  //   </div>
+  const content = data.allDatoCmsPost.edges.map(({ node: post }) => (
+    <div key={post.id}>
+      <h3>{post.titre}</h3>
+      <p>{post.description}</p>
+      <Link to={post.slug}>Aller blog</Link>
+    </div>
     
-  // ))
+  ))
 
-  // const contentProduct = data.allDatoCmsProduct.edges.map(({ node: product }) => (
-  //   <div key={product.id}>
-  //     <h3>{product.titre}</h3>
-  //     <p>{product.description}</p>
-  //     <Link to={product.slug}>Aller store</Link>
-  //   </div>
+  const contentProduct = data.allDatoCmsProduct.edges.map(({ node: product }) => (
+    <div key={product.id}>
+      <h3>{product.titre}</h3>
+      <p>{product.description}</p>
+      <Link to={product.slug}>Aller store</Link>
+    </div>
     
-  // ))
+  ))
 
   return (
   <Layout>
@@ -123,7 +123,7 @@ const IndexPage = ({ data }) => {
       <Testimonials />
     </section>
 
-    {/* <div className='index_container'>
+    <div className='index_container'>
       { content }
       { contentProduct }
     </div>
@@ -132,7 +132,7 @@ const IndexPage = ({ data }) => {
     <p>
       <Link to="/page-2/">Go to page 2</Link> <br />
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p> */}
+    </p>
     
   </Layout>
   )
