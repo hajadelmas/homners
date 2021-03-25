@@ -1,17 +1,21 @@
-// const HeroSection = styled.section`
 
-// `
 
 .HeroSection {
     height: 90vh;
     max-height: 1100px;
     position: relative;
     overflow: hidden;
+
+    @media screen and (max-width: 1024px){
+        height: 50vh;
+    }
+
+    @media screen and (max-width: 768px){
+        height: 80vh;
+    }
 }
 
-// const HeroWrapper = styled.div`
 
-// `
 .HeroWrapper {
     width: 100%;
     height: 100%;
@@ -22,9 +26,7 @@
     position: relative;
 }
 
-// const HeroSlide = styled.div`
-    
-// `
+
 
 .HeroSlide {
     z-index: 1;
@@ -32,9 +34,7 @@
     height: 100%;
 }
 
-// const HeroSlider = styled.div`
 
-// `
 
 .HeroSlider {
     position: absolute;
@@ -107,17 +107,11 @@
     }
 }
 
-// const Arrow = styled(IoMdArrowRoundForward)`
-    
-// `
 
 .Arrow {
     margin-left: 0.5rem;
 }
 
-// const SliderButtons = styled.div`
-    
-// `
 
 .SliderButtons {
     position: absolute;
@@ -127,9 +121,7 @@
     z-index: 10;
 }
 
-// const arrowButtons = css `
 
-// `
 
 .PrevArrow, .NextArrow {
     width: 50px;

@@ -5,31 +5,31 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/Hero"
-
 import Calculator from '../components/calculator/Calculator'
-
+import Testimonials from "../components/testimonials/Testimonials"
 import '../styles/index.scss'
+
 
 const IndexPage = ({ data }) => {
 
 
-  const content = data.allDatoCmsPost.edges.map(({ node: post }) => (
-    <div key={post.id}>
-      <h3>{post.titre}</h3>
-      <p>{post.description}</p>
-      <Link to={post.slug}>Aller blog</Link>
-    </div>
+  // const content = data.allDatoCmsPost.edges.map(({ node: post }) => (
+  //   <div key={post.id}>
+  //     <h3>{post.titre}</h3>
+  //     <p>{post.description}</p>
+  //     <Link to={post.slug}>Aller blog</Link>
+  //   </div>
     
-  ))
+  // ))
 
-  const contentProduct = data.allDatoCmsProduct.edges.map(({ node: product }) => (
-    <div key={product.id}>
-      <h3>{product.titre}</h3>
-      <p>{product.description}</p>
-      <Link to={product.slug}>Aller store</Link>
-    </div>
+  // const contentProduct = data.allDatoCmsProduct.edges.map(({ node: product }) => (
+  //   <div key={product.id}>
+  //     <h3>{product.titre}</h3>
+  //     <p>{product.description}</p>
+  //     <Link to={product.slug}>Aller store</Link>
+  //   </div>
     
-  ))
+  // ))
 
   return (
   <Layout>
@@ -62,7 +62,7 @@ const IndexPage = ({ data }) => {
         <StaticImage
           src="../images/calcul-img.jpg"
           alt="A Gatsby astronaut"
-          style={{ width: `60%` }}
+          className='img_calcul'
         />
         <div className='calculs_mod'>
           <Calculator />
@@ -114,6 +114,13 @@ const IndexPage = ({ data }) => {
         </div>
 
       </div>
+    </section>
+
+    <section className="testimonials">
+      <div className="home_padding">
+        <h1>Avis clients</h1>
+      </div>
+      <Testimonials />
     </section>
 
     {/* <div className='index_container'>

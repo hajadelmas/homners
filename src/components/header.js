@@ -74,16 +74,16 @@ function Header({ siteTitle }) {
         <>
             <nav className={navbar ? "navbar active" : "navbar"}>
                 <div className="navbar-container">
-                    <Link to="/" className='navbar-logo' onClick={closeMobileMenu}>
+                    <Link to="/" className='navbar-logo-link' onClick={closeMobileMenu}>
                         <StaticImage
+                            className='navbar-logo'
                             src="../images/logo-homners.png"
-                            
-                            height={60}
-                            width={55}
-                            quality={100}
+                            // height={60}
+                            // width={55}
+                            // quality={100}
                             formats={["AUTO", "WEBP", "AVIF"]}
                             alt="homners logo"
-                            style={{}}
+                            style={{ width: `40%` }}
                             />
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
@@ -92,19 +92,24 @@ function Header({ siteTitle }) {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className="nav-item" onMouseEnter={MouseEnter} onMouseLeave={MouseLeave}>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
                                 NOS SERVICES {button && <FaCaretDown className='CaretDown' />}
                             </Link>
                             {dropdown && <Dropdown />}
                         </li>
                         <li className="nav-item">
-                            <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
                                 NOS BIENS
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/posts' className='nav-links' onClick={closeMobileMenu}>
                                 BLOG
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/partners' className='nav-links' onClick={closeMobileMenu}>
+                                NOS PARTENAIRES
                             </Link>
                         </li>
                         <li className="nav-item">

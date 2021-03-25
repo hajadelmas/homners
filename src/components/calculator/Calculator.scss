@@ -28,6 +28,10 @@ small {
         font-size: clamp(1rem, 6vw, 1.6rem);
     }
 
+    @media screen and (max-width: 1024px) {
+        margin-left: 2.2em;
+    }
+
     @media screen and (max-width: 768px){
         justify-content: center;
         text-align: center;

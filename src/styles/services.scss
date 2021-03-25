@@ -1,0 +1,56 @@
+@import './global.scss';
+
+
+.services {
+    width: 100%;
+    margin-top: 2em;
+
+    h1 {
+        color: $primary-color;
+        font-size: $bigTitles;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .container_image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img_services {
+            width: 70%;
+        }
+    }
+}
+
+.timeline_container {
+    margin-top: 2em;
+
+    .vertical-timeline::before {
+        background: $primary-color;
+    }
+
+    // .vertical-timeline-element-icon {
+    //     box-shadow: 0 0 0 4px $primary-color, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%);
+    // }
+
+    .date_class1 {
+        // font-size: $bigTitles;
+        text-transform: uppercase;
+        color: $primary-color;
+    }
+
+    .date_class2 {
+        // font-size: $bigTitles;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    .date_class3 {
+        // font-size: $bigTitles;
+        text-transform: uppercase;
+        color: #499f68;
+    }
+
+
+}
