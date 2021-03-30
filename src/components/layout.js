@@ -1,14 +1,27 @@
 
 
-import * as React from "react"
+import React, {useEffect} from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+//GSAP
+import { gsap } from "gsap";
+import { ScrollTrigger, Scrollbar } from "gsap/ScrollTrigger";
+import { document, window } from 'browser-monads'
+
+
 import Header from "./header"
 import Footer from "./Footer"
-// import "./layout.css"
+
 
 const Layout = ({ children }) => {
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+
+
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

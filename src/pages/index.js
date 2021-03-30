@@ -7,6 +7,14 @@ import SEO from "../components/seo"
 import Hero from "../components/Hero"
 import Calculator from '../components/calculator/Calculator'
 import Testimonials from "../components/testimonials/Testimonials"
+
+// Icons
+import { ImPriceTag } from 'react-icons/im'
+import { FaSign } from 'react-icons/fa'
+import { IoIosCalculator } from 'react-icons/io'
+import { AiOutlineFormatPainter } from 'react-icons/ai'
+import { GiShakingHands } from 'react-icons/gi'
+
 import '../styles/index.scss'
 
 
@@ -49,7 +57,33 @@ const IndexPage = ({ data }) => {
       
       <div className="color_container">
 
+        <div className="info_container">
+          <ImPriceTag />
+          <h3>honoraires attractifs</h3>
+        </div>
+
+        <div className="info_container">
+          <FaSign />
+          <h3>vente 30 jours</h3>
+        </div>
+
+        <div className="info_container">
+          <IoIosCalculator />
+          <h3>Estimation</h3>
+        </div>
+
+        <div className="info_container">
+          <AiOutlineFormatPainter />
+          <h3>service additionnels</h3>
+        </div>
+
+        <div className="info_container">
+          <GiShakingHands />
+          <h3>accomagnement</h3>
+        </div>
+        
       </div>
+
     </section>
 
     <section className="calculs">
