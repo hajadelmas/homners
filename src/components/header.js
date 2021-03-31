@@ -114,7 +114,7 @@ function Header({ siteTitle }) {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
+                            <Link to='/contact-us' className='nav-links-mobile' onClick={closeMobileMenu}>
                                 CONTACT
                             </Link>
                         </li>
