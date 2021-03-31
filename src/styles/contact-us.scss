@@ -1,0 +1,74 @@
+@import './global.scss';
+
+.contact-us {
+    display: flex;
+
+    .container_contact_1 {
+        width: 50%;
+        // height: 80vh;
+        background-color: $primary-color;
+        padding: 2em;
+
+        h1 {
+            font-size: $bigTitles;
+            color: #fff;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: #fff;
+        }
+
+        .form_container {
+            display: flex;
+            flex-direction: column;
+
+            label, input, textarea, button {
+                margin-bottom: 1em;
+            }
+
+            input {
+                padding: 1.5em;
+                border: none;
+                border-radius: 50px;
+                width: 50%;
+
+                &:focus {
+                    // border: none;
+                    // box-shadow: none;
+                    outline: none;
+                }
+            }
+
+            textarea {
+                width: 70%;
+                padding: 1em;
+                border-radius: 20px;
+                outline: none;
+            }
+
+            button {
+                width: 20%;
+                border-radius: 20px;
+                border: 1px solid #fff;
+                padding: .8em;
+                color: #fff;
+                background-color: transparent;
+                font-size: 1.1rem;
+                font-weight: bold;
+                transition: .2s;
+                cursor: pointer;
+
+                &:hover {
+                    color: $primary-color;
+                    background-color: #fff;
+                    // transform: scale(1.1);
+                }
+            }
+
+            
+        }
+
+    }
+}

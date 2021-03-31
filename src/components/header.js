@@ -119,7 +119,7 @@ function Header({ siteTitle }) {
                             </Link>
                         </li>
                     </ul>
-                    {button && <button className=' btn btn--outline'>CONTACT</button>}
+                    {button && <button className=' btn btn--outline'><Link to='/contact-us'>CONTACT</Link></button>}
                 </div>
             </nav>
         </>

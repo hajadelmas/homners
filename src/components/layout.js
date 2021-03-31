@@ -6,6 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 //GSAP
 import { gsap } from "gsap";
+
 import { ScrollTrigger, Scrollbar } from "gsap/ScrollTrigger";
 import { document, window } from 'browser-monads'
 
@@ -15,12 +16,6 @@ import Footer from "./Footer"
 
 
 const Layout = ({ children }) => {
-
-gsap.registerPlugin(ScrollTrigger);
-
-
-
-
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
