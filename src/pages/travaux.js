@@ -24,8 +24,8 @@ const travaux = () => {
             <div className='compare_container'>
                {/* <ReactCompareImage leftImage={Img1} rightImage={Img2} />  */}
                <ImgComparisonSlider>
-                    <img slot="before" src={Img1} />
-                    <img slot="after" src={Img2} />
+                    <img slot="before" src={Img1} alt=''/>
+                    <img slot="after" src={Img2} alt=''/>
                 </ImgComparisonSlider>
             </div>
 

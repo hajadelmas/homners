@@ -1,0 +1,13 @@
+@import './global.scss';
+
+
+.products_container {
+    margin-top: 4em;
+
+    h1 {
+        font-size: $bigTitles;
+        color: $primary-color;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

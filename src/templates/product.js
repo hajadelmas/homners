@@ -22,7 +22,7 @@ const { titre, description } = data.datoCmsProduct
 }
 
 export const query = graphql`
-    query($slug: String!) {
+    query MyProduct($slug: String!) {
       datoCmsProduct(slug: { eq: $slug }) {
         slug
         titre

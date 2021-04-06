@@ -3,15 +3,15 @@
 small {
     font-weight: lighter;
     color: black;
-    margin: 0;
+    margin-top: 100px;
 }
   
   
   
 .flex {
-    padding-top: 15px;
-    display: flex;
-    justify-content: space-between;
+    // padding-top: 15px;
+    // display: flex;
+    // justify-content: space-between;
 }
   
 .App {
@@ -55,4 +55,13 @@ small {
     // left: -50%;
     position: relative;
     display: none;
+}
+
+.input-range__track--active {
+    background: #C8E7FA;
+}
+
+.input-range__slider {
+    background: #C8E7FA;
+    border: 1px solid #C8E7FA;
 }

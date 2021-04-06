@@ -21,23 +21,23 @@ import '../styles/index.scss'
 const IndexPage = ({ data }) => {
 
 
-  const content = data.allDatoCmsPost.edges.map(({ node: post }) => (
-    <div key={post.id}>
-      <h3>{post.titre}</h3>
-      <p>{post.description}</p>
-      <Link to={post.slug}>Aller blog</Link>
-    </div>
+  // const content = data.allDatoCmsPost.edges.map(({ node: post }) => (
+  //   <div key={post.id}>
+  //     <h3>{post.titre}</h3>
+  //     <p>{post.description}</p>
+  //     <Link to={post.slug}>Aller blog</Link>
+  //   </div>
     
-  ))
+  // ))
 
-  const contentProduct = data.allDatoCmsProduct.edges.map(({ node: product }) => (
-    <div key={product.id}>
-      <h3>{product.titre}</h3>
-      <p>{product.description}</p>
-      <Link to={product.slug}>Aller store</Link>
-    </div>
+  // const contentProduct = data.allDatoCmsProduct.edges.map(({ node: product }) => (
+  //   <div key={product.id}>
+  //     <h3>{product.titre}</h3>
+  //     <p>{product.description}</p>
+  //     <Link to={product.slug}>Aller store</Link>
+  //   </div>
     
-  ))
+  // ))
 
   return (
   <Layout>
@@ -79,7 +79,7 @@ const IndexPage = ({ data }) => {
 
         <div className="info_container">
           <GiShakingHands />
-          <h3>accomagnement</h3>
+          <h3>accompagnement</h3>
         </div>
         
       </div>
@@ -157,10 +157,10 @@ const IndexPage = ({ data }) => {
       <Testimonials />
     </section>
 
-    <div className='index_container'>
+    {/* <div className='index_container'>
       { content }
       { contentProduct }
-    </div>
+    </div> */}
 
 
     <p>
@@ -176,28 +176,28 @@ const IndexPage = ({ data }) => {
 
 export default IndexPage
 
-export const query = graphql`
-  query {
-    allDatoCmsPost {
-      edges {
-        node {
-          titre
-          id
-          description
-          slug
-        }
-      }
-    }
-    allDatoCmsProduct {
-      edges {
-        node {
-          titre
-          id
-          description
-          slug
-        }
-      }
-    }
-  }
+// export const query = graphql`
+//   query {
+//     allDatoCmsPost {
+//       edges {
+//         node {
+//           titre
+//           id
+//           description
+//           slug
+//         }
+//       }
+//     }
+//     allDatoCmsProduct {
+//       edges {
+//         node {
+//           titre
+//           id
+//           description
+//           slug
+//         }
+//       }
+//     }
+//   }
   
-`
+// `

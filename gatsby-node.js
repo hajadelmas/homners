@@ -38,7 +38,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
         result.data.allDatoCmsProduct.edges.forEach(edge => {
           createPage({
-            path: edge.node.slug,
+            path: `/products/${edge.node.slug}/`,
             component: StoreTemplate,
             context: {
               slug: edge.node.slug,
@@ -47,7 +47,7 @@ exports.createPages = ({ graphql, actions }) => {
         });
         result.data.allDatoCmsPost.edges.forEach(data => {
           createPage({
-            path: data.node.slug,
+            path: `/posts/${data.node.slug}/`,
             component: BlogTemplate,
             context: {
               slug: data.node.slug

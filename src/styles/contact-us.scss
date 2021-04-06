@@ -65,10 +65,59 @@
                     background-color: #fff;
                     // transform: scale(1.1);
                 }
+
+                @media screen and (max-width: 768px) {
+                    width: 30%;
+                }
             }
 
             
         }
+        @media screen and (max-width: 1024px) {
+            width: 70%;
+        }
+    }
+    .container_contact_2 {
+        padding-left: 2em;
 
+        p {
+            font-size: $normalText;
+            width: 70%;
+        }
+
+        .adresse_1 {
+            margin: 4em 0;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+
+        .container_contact_1 {
+            width: 100%;
+            padding: 2em 0;
+
+            h1, h2 {
+                text-align: center;
+            }
+
+            .form_container {
+                justify-content: center;
+                align-items: center;
+
+                button {
+                    width: 30%;
+                }
+            }
+        }
+
+        .container_contact_2 {
+            padding: 0;
+            text-align: center;
+            
+            p {
+                width: 100%;
+            }
+        }
     }
 }

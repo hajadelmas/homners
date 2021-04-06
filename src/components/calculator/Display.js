@@ -39,7 +39,7 @@ export default function Display({ amount, years }) {
     
         // return <p>£{Math.round(monthlyRepayment)}</p>;
 
-        return <h1>{total} €</h1>
+        return <h1>{total} €*</h1>
 
 
       };
@@ -56,7 +56,7 @@ export default function Display({ amount, years }) {
                 {/* <DisplayChild func={percentageAPR()} text="interest rate" /> */}
                 <DisplayChild
                 func={calculateMonthlyRepayment()}
-                text="que vous économisez avec Homners."
+                text="*que vous économisez avec Homners."
                 />
             </div>
         </div>

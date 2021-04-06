@@ -32,7 +32,54 @@ const contactUs = () => {
                     </form>
                 </div>
 
-                <div className="container_contact_2"></div>
+                <div className="container_contact_2">
+                    <div className="adresse_1">
+                        <h3>Homners immobilier Bordeaux</h3>
+                        <p>
+                            TÉLÉPHONE FIXE : 05 56 48 36 49
+                        </p>
+
+                        <p>
+                            PORTABLE : 06 81 48 62 19 / 06 18 07 26 29
+                        </p>
+
+                        <p>
+                            ADRESSE : 13, rue Saint Rémi 33000
+                            Bordeaux
+                        </p>
+
+                        <p>
+                            Nº carte de transaction : 3301 2017
+                            000 022
+                        </p>
+                        <p>
+                            RCS : 833466899-00014
+                        </p>
+                    </div>
+                    <div className="adresse_2">
+                        <h3>Homners immobilier Bassin d'Arcachon</h3>
+                        <p>
+                            TÉLÉPHONE FIXE : 05 56 48 36 49
+                        </p>
+
+                        <p>
+                            PORTABLE : 06 81 48 62 19 / 06 18 07 26 29
+                        </p>
+
+                        <p>
+                            ADRESSE : 22, rue du paradis aux
+                            canards
+                            33260 La teste de Buch
+                        </p>
+
+                        <p>
+                            Nº carte de transaction : 3301 2017 000 022
+                        </p>
+                        <p>
+                            RCS : 833466899-00014
+                        </p>
+                    </div>
+                </div>
             </div>
         </Layout>
     )
