@@ -1,7 +1,7 @@
 @import './global.scss';
 
 
-.products_container {
+.products {
     margin-top: 4em;
 
     h1 {
@@ -9,5 +9,39 @@
         color: $primary-color;
         text-align: center;
         text-transform: uppercase;
+    }
+}
+
+.products_container {
+    padding: 0 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // max-width: 300px;
+    
+
+    .products_details {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin: 0 2em 2em;
+        box-shadow: 1px 1px 5px grey;
+        padding: .9em;
+        
+
+        a {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            text-decoration: none;
+            color: #fff;
+            background-color: $primary-color;
+            padding: .6em;
+
+            // &:hover {
+            //     background-color: ;
+            // }
+        }
     }
 }
