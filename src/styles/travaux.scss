@@ -29,9 +29,34 @@
     }
 }
 
-.compare_container {
-    display: flex;
-    justify-content: center;
-    align-self: center;
+.container_travaux {
+    margin-top: 7em;
 
+    h1 {
+        font-size: $bigTitles;
+        color: $primary-color;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .compare_container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 3em;
+
+        img {
+            height: 500px;
+        }
+
+        @media screen and (max-width: 500px){
+            h1 {
+                display: none;
+            }
+        }
+
+        
+
+    }
 }
+
