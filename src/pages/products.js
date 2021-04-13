@@ -36,7 +36,7 @@ export default products
 
 export const query = graphql`
   query MyProducts {
-    allDatoCmsProduct {
+    allDatoCmsProduct(sort: {order: DESC, fields: meta___createdAt}) {
       edges {
         node {
           titre

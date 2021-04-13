@@ -3,3 +3,42 @@ $secondary-color: #C8E7FA;
 
 $bigTitles: clamp(2rem, 6vw, 4.5rem);
 $normalText :  clamp(1rem, 2vw, 1.2rem);
+
+
+.container_product {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2em;
+    margin-top: 2em;
+
+
+    .container_slider {
+        width: 40%;
+        height: 300px;
+
+    }
+
+    .container_desc {
+        width: 50%;
+
+        h3 {
+            margin: 0;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            background-color: $primary-color;
+            padding: .5em;
+            border-radius: 20px;
+        }
+    }
+}
+
+.slick-prev:before, .slick-next:before {
+    color: black;
+}

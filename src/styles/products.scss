@@ -17,20 +17,22 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     // max-width: 300px;
     
 
     .products_details {
         position: relative;
         display: flex;
+        // justify-content: space-around;
         flex-direction: column;
-        max-width: 300px;
-        margin: 0 2em 2em;
+        max-width: 250px;
+        // margin: 0 1em 2em;
         box-shadow: 1px 1px 5px grey;
         padding: .9em;
 
         img {
-            height: 200px;
+            height: 150px;
         }
         
 

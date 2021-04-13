@@ -41,7 +41,7 @@ const IndexPage = ({ data }) => {
 
   return (
   <Layout>
-    <SEO title="Home" /> 
+    <SEO title="Accueil" /> 
     <Hero />
 
     <section className="desc">

@@ -1,19 +1,43 @@
 import React from 'react'
+import { Link } from 'gatsby'
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
+
 import './Footer.scss'
 
 const Footer = () => {
     return (
-        <section className='footer'>
+        <footer className='footer'>
             <div className='footer_container'>
+                <div className="container_social">
+                    <Link to=''>
+                        <FaFacebook />
+                    </Link>
+                    <Link to=''>
+                        <FaInstagram />
+                    </Link>
+                    <Link to=''>
+                        <FaLinkedin />
+                    </Link>
+                </div>
+                <div className="container_pages">
+                    <Link to='/'>Accueil</Link>
+                    <Link to='/services'>Services</Link>
+                    <Link to='/tarifs'>Tarification</Link>
+                    <Link to='/travaux'>Travaux</Link>
+                    <Link to='/products'>Biens</Link>
+                    <Link to='/posts'>Blog</Link>
+                    <Link to=''>Partenaires</Link>
+                    <Link to='/contact-us'>Contact</Link>
+                </div>
                 <div className='mysite'>
-                © {new Date().getFullYear()}, Créé par
-                {` `}
-                <a href="https://www.studio-haja.fr">Studio Haja</a>
+                Cpoyright © {new Date().getFullYear()} 2021. Tous droits réservés. 
+                {`  `} 
+                    <a href="https://www.studio-haja.fr" target='_blank'> Créé par Studio Haja.</a>
                 </div>
             </div>
             
 
-        </section>
+        </footer>
     )
 }
 
