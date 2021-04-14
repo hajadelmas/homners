@@ -78,13 +78,13 @@ function Header({ siteTitle }) {
                     <Link to="/" className='navbar-logo-link' onClick={closeMobileMenu}>
                         <StaticImage
                             className='navbar-logo'
-                            src="../images/logo-homners.png"
+                            src="../images/logoHomnersFinal.png"
                             // height={60}
                             // width={55}
                             // quality={100}
                             formats={["AUTO", "WEBP", "AVIF"]}
                             alt="homners logo"
-                            style={{ width: `40%` }}
+                            style={{ width: `50%` }}
                             />
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>

@@ -95,6 +95,7 @@
     p {
         font-size: $normalText;
         text-align: justify;
+        
     }
 
     .calculs_container {
@@ -115,6 +116,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        p {
+            padding: 0 2em;
         }
     }
 
@@ -186,6 +193,12 @@
                     width: 90%;
                 }
             }
+    }
+
+    @media screen and (max-width: 500px) {
+        h1 {
+            padding: 0 1em;
+        }
     }
 
 
