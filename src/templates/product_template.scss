@@ -14,14 +14,15 @@ $normalText :  clamp(1rem, 2vw, 1.2rem);
 
     .container_slider {
         width: 40%;
-        height: 300px;
+        height: 400px;
 
     }
 
     .container_desc {
-        width: 50%;
+        // width: 50%;
+        
 
-        h3 {
+        h1 {
             margin: 0;
         }
 
@@ -37,8 +38,26 @@ $normalText :  clamp(1rem, 2vw, 1.2rem);
             border-radius: 20px;
         }
     }
+
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .container_slider {
+            width: 90%;
+        }
+    }
 }
 
 .slick-prev:before, .slick-next:before {
     color: black;
 }
+
+.slick-slide {
+    height: 300px;
+ }
+ 
+ .slick-slide img {
+    height:300px;
+ }

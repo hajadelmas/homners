@@ -24,7 +24,7 @@ var settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
-  adaptiveHeight: true
+  // adaptiveHeight: true
 };
 
 const { titre, description, commune, photos, lienLeboncoin } = data.datoCmsProduct
@@ -34,7 +34,7 @@ const { titre, description, commune, photos, lienLeboncoin } = data.datoCmsProdu
       <SEO title={titre} description={description} />
       <div className='container_product'>
         <div className='container_slider'>
-          <Slider {...settings}>
+          <Slider {...settings} className='slider_custom'>
             <GatsbyImage image={photos[0].gatsbyImageData} alt='' className='' />
             <GatsbyImage image={photos[1].gatsbyImageData} alt='' className='' />
           </Slider>

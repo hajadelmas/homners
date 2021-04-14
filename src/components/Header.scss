@@ -185,6 +185,11 @@
       width: 100%;
       font-size: 1.5rem;
       display: table;
+
+      &:hover {
+        border-bottom: none;
+        
+      }
     }
   
     // .nav-links:hover {
@@ -233,11 +238,11 @@
       border: 1px solid #0099CE;
       transition: all 0.3s ease-out;
 
-      &:hover {
-        background: #fff;
-        color: #242424;
-        transition: 250ms;
-      }
+      // &:hover {
+      //   background: #fff;
+      //   color: #242424;
+      //   transition: 250ms;
+      // }
     }
   
     
