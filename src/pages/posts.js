@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from "gatsby"
 import { StaticImage, GatsbyImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 import '../styles/posts.scss'
 
@@ -13,6 +14,7 @@ const posts = ({ data }) => {
 
     return (
         <Layout>
+          <SEO title="BLOG" /> 
             <div className="post_container">
                 <h1>BLOG</h1>
                 <div className="container_image">

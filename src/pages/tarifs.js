@@ -2,12 +2,14 @@ import React from 'react'
 import Layout from '../components/layout'
 import { BsFillHouseFill } from 'react-icons/bs'
 import { Link } from 'gatsby'
+import SEO from '../components/seo'
 
 import '../styles/tarifs.scss'
 
 const tarifs = () => {
     return (
         <Layout>
+            <SEO title="Tarifs" /> 
             <div className="tarifs">
                 <h1>Nos Tarifs</h1>
                 <h3>Estimation gratuite, valable pour tout type de biens sans engagement.</h3>
@@ -90,7 +92,7 @@ const tarifs = () => {
             <div className='tarif_contact'>
                 <h2>Vous avez des questions ?</h2>
                 <div className='contact_button'>
-                    <Link to='/'>Nous Contacter</Link>
+                    <Link to='/contact-us'>Nous Contacter</Link>
                 </div>
             </div>
 

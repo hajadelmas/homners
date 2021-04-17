@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `HOMNERS Immobilier`,
-    description: `Comment cendre rapidemment sa maison à Bordeaux.`,
-    author: `@gatsbyjs`,
+    description: `Comment vendre rapidemment sa maison à Bordeaux.`,
+    author: `@homners`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

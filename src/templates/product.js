@@ -41,6 +41,7 @@ const { titre, description, commune, photos, lienLeboncoin } = data.datoCmsProdu
         </div>
         <div className='container_desc'>
           <h1>{titre}</h1>
+          <p>Commune : {commune}</p>
           <p>{description}</p>
           <h3>Pour plus de détails, <Link to={lienLeboncoin}>Cliquez ici.</Link></h3>
         </div>

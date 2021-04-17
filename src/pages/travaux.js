@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import { ImgComparisonSlider } from '@img-comparison-slider/react';
+import SEO from '../components/seo'
 
 
 import Img1 from '../images/travaux/porte_avant (1).jpeg'
@@ -15,6 +16,7 @@ import '../styles/travaux.scss'
 const travaux = () => {
     return (
         <Layout>
+            <SEO title="Travaux / Home Stagging" /> 
             <div className="travaux">
                 <h1>Travaux / Home Stagging</h1>
                 <p>Confiez-nous l'embellissement de votre bien : jardin, mur, rénovations, petits travaux, embellissement intérieur ou extérieur, et avec un minimum d'investissement, obtenez une valorisation incomparable.</p>

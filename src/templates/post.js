@@ -14,7 +14,7 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="post" description="posts" />
+      <SEO title={titre} description={description} />
       <section className='post'>
         <h1>{titre}</h1>
         <p>Ajouté le {dateAjout}</p>

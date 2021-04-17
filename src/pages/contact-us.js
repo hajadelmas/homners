@@ -1,11 +1,13 @@
 import React from 'react'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 import '../styles/contact-us.scss'
 
 const contactUs = () => {
     return (
         <Layout>
+            <SEO title="Contact" /> 
             <div className="contact-us">
 
                 <div className="container_contact_1">
