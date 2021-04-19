@@ -1,7 +1,11 @@
+const autoprefixer = require('autoprefixer');
+const browserslist = require('browserslist');
+
+
 module.exports = {
   siteMetadata: {
     title: `HOMNERS Immobilier`,
-    description: `Comment vendre rapidemment sa maison à Bordeaux.`,
+    description: `L'immobilier à prix fixe`,
     author: `@homners`,
   },
   plugins: [
@@ -18,9 +22,18 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-sass`,
+    // `gatsby-plugin-sass`,
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        postCssPlugins: [
+          autoprefixer({ Browserslist: browserslist() }),
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,  
+    `gatsby-plugin-sharp`,
+    
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

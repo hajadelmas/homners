@@ -26,9 +26,32 @@ const IndexPage = ({ data }) => {
     <Hero />
 
     <section className="desc">
-      <h1>Qui sommes-nous ?</h1>
-      <p>Vous cherchez à vendre rapidement et au meilleur prix votre bien immobilier sur la métropole de Bordeaux ou sur le bassin d'Arcachon ?</p>
-      <p>Avec Homners, vous bénéficiez d'un véritable accompagnement par des professionnels de l'immobilier, tout en conservant les avantages d'une vente de particulier à particulier. En effet, nous sommes une agence immobilière nouvelle génération, dont la rémunération est basée sur un forfait fixe plutôt qu'un pourcentage, avec un seul objectif : vous satisfaire et vous aider à vendre votre bien rapidement en toute transparence.</p>
+      <h1
+      data-aos='fade-up'
+      data-aos-duration='300'
+      data-aos-once='true'
+      data-aos-easing='ease-in-out'
+      >
+        Qui sommes-nous ?
+      </h1>
+      <p
+      data-aos='fade-up'
+      data-aos-duration='300'
+      data-aos-once='true'
+      data-aos-easing='ease-in-out'
+      data-aos-delay='150'
+      >
+        Vous cherchez à vendre rapidement et au meilleur prix votre bien immobilier sur la métropole de Bordeaux ou sur le bassin d'Arcachon ?
+      </p>
+      <p
+      data-aos='fade-up'
+      data-aos-duration='300'
+      data-aos-once='true'
+      data-aos-easing='ease-in-out'
+      data-aos-delay='200'
+      >
+        Avec Homners, vous bénéficiez d'un véritable accompagnement par des professionnels de l'immobilier, tout en conservant les avantages d'une vente de particulier à particulier. En effet, nous sommes une agence immobilière nouvelle génération, dont la rémunération est basée sur un forfait fixe plutôt qu'un pourcentage, avec un seul objectif : vous satisfaire et vous aider à vendre votre bien rapidement en toute transparence.
+      </p>
     </section>
 
     <section className='atouts'>
@@ -38,27 +61,51 @@ const IndexPage = ({ data }) => {
       
       <div className="color_container">
 
-        <div className="info_container">
+        <div className="info_container"
+        data-aos='fade-up'
+        data-aos-duration='300'
+        data-aos-once='true'
+        >
           <ImPriceTag />
           <h3>honoraires attractifs</h3>
         </div>
 
-        <div className="info_container">
+        <div className="info_container"
+        data-aos='fade-up'
+        data-aos-duration='300'
+        data-aos-delay='100'
+        data-aos-once='true'
+        >
           <FaSign />
           <h3>vente 30 jours</h3>
         </div>
 
-        <div className="info_container">
+        <div className="info_container"
+        data-aos='fade-up'
+        data-aos-duration='300'
+        data-aos-delay='150'
+        data-aos-once='true'
+        >
           <IoIosCalculator />
           <h3>Estimation</h3>
         </div>
 
-        <div className="info_container">
+        <div className="info_container"
+        data-aos='fade-up'
+        data-aos-duration='300'
+        data-aos-delay='200'
+        data-aos-once='true'
+        >
           <AiOutlineFormatPainter />
           <h3>service additionnels</h3>
         </div>
 
-        <div className="info_container">
+        <div className="info_container"
+        data-aos='fade-up'
+        data-aos-duration='300'
+        data-aos-delay='250'
+        data-aos-once='true'
+        >
           <GiShakingHands />
           <h3>accompagnement</h3>
         </div>
@@ -79,7 +126,7 @@ const IndexPage = ({ data }) => {
           alt="A Gatsby astronaut"
           className='img_calcul'
         />
-        <div className='calculs_mod'>
+        <div className='calculs_mod' data-aos='fade-right' data-aos-duration='500' data-aos-easing='ease-in-out' data-aos-once='true'>
           <Calculator />
         </div>
       </div>
@@ -92,7 +139,11 @@ const IndexPage = ({ data }) => {
 
       <div className='etapes_container'>
 
-        <div className='carre_box'>
+        <div className='carre_box'
+        data-aos='fade-up'
+        data-aos-duration='400'
+        data-aos-once='true'
+        >
           <StaticImage
             className='carre_image'
             src="../images/grid-1.jpg"
@@ -101,7 +152,12 @@ const IndexPage = ({ data }) => {
           <h3>L' estimation gratuite de votre bien est sans engagement !</h3>
         </div>
 
-        <div className='carre_box'>
+        <div className='carre_box'
+        data-aos='fade-up'
+        data-aos-duration='400'
+        data-aos-once='true'
+        data-aos-delay='150'
+        >
           <StaticImage
             className='carre_image'
             src="../images/grid-2.jpg"
@@ -110,7 +166,12 @@ const IndexPage = ({ data }) => {
           <h3>La création de l'annonce de vente et publication sur internet est immédiate</h3>
         </div>
 
-        <div className='carre_box'>
+        <div className='carre_box'
+        data-aos='fade-up'
+        data-aos-duration='400'
+        data-aos-once='true'
+        data-aos-delay='200'
+        >
           <StaticImage
             className='carre_image'
             src="../images/grid-3.jpg"
@@ -119,7 +180,12 @@ const IndexPage = ({ data }) => {
           <h3>Planification des visites et réception des offres</h3>
         </div>
 
-        <div className='carre_box'>
+        <div className='carre_box'
+        data-aos='fade-up'
+        data-aos-duration='400'
+        data-aos-once='true'
+        data-aos-delay='250'
+        >
           <StaticImage
             className='carre_image'
             src="../images/grid-4.jpg"
@@ -133,7 +199,7 @@ const IndexPage = ({ data }) => {
 
     <section className="testimonials">
       <div className="home_padding">
-        <h1>Avis clients</h1>
+        <h1 data-aos='fade-down' data-aos-once='true'>Avis clients</h1>
       </div>
       <Testimonials />
     </section>

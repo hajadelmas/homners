@@ -16,10 +16,10 @@ const posts = ({ data }) => {
         <Layout>
           <SEO title="BLOG" /> 
             <div className="post_container">
-                <h1>BLOG</h1>
-                <div className="container_image">
+                <h1 data-aos='fade-down' data-aos-duration='500' data-aos-once='true'>BLOG</h1>
+                <div className="container_image" data-aos='zoom-out' data-aos-delay='200' data-aos-once='true'>
                     <StaticImage src='../images/house-1.jpg' alt='' className='img_services'/>
-                    <div className="blackText">
+                    <div className="blackText" data-aos='fade-left' data-aos-delay='250' data-aos-once='true'>
                         <h3>Toutes nos actus</h3>
                     </div>
                 </div>

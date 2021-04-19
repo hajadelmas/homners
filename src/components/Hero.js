@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import { IoMdArrowRoundForward } from 'react-icons/io'
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5'
 import { SliderData } from './SliderData'
+import { motion, AnimatePresence } from 'framer-motion'
 
 import './Hero.scss'
 
@@ -54,19 +55,54 @@ const Hero = () => {
     }
 
 
+    //FRAMER
+    const fadeAnimation = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition : { duration: 0.8 }},
+        exit: { opacity: 0 }
+
+    }
+
+
     return (
         <section className='HeroSection'>
             <div className='HeroWrapper'>
-                {slides.map((slide, index) => {
+                <AnimatePresence>
+                    {slides.map((slide, index) => {
                     return (
                         <div className='HeroSlide' key={index}>
                             {index === current && (
                             <div className='HeroSlider'>
-                                <img className='HeroImage' src={slide.image} alt={slide.alt}/>
+                                <motion.img className='HeroImage'
+                                src={slide.image}
+                                alt={slide.alt}
+                                initial='hidden'
+                                animate='visible'
+                                exit='exit'
+                                variants={fadeAnimation}
+                                />
                                 <div className='HeroContent'>
-                                    <h1>{slide.title}</h1>
-                                    <p>{slide.price}</p>
-                                    <button className='Button' to={slide.path} primary='true' css={`max-width: 160px`}>
+                                    <h1 data-aos="fade-down"
+                                    data-aos-duration="600"
+                                    >
+                                        {slide.title}
+                                    </h1>
+                                    <p
+                                    data-aos="fade-down"
+                                    data-aos-duration="600"
+                                    data-aos-delay='200'
+                                    >
+                                        {slide.desc}
+                                    </p>
+                                    <button
+                                    className='Button'
+                                    to={slide.path}
+                                    primary='true'
+                                    css={`max-width: 160px`}
+                                    data-aos="zoom-out"
+                                    data-aos-duration="500"
+                                    data-aos-delay='250'
+                                    >
                                         {slide.label}
                                         <IoMdArrowRoundForward className='Arrow' />
                                     </button>
@@ -75,8 +111,10 @@ const Hero = () => {
                             )}
 
                         </div>
-                    )
-                })}
+                        )
+                    })}
+                </AnimatePresence>
+                
                 <div className='SliderButtons'>
                     <IoArrowBack className='PrevArrow' onClick={prevSlide}/>
                     <IoArrowForward className='NextArrow' onClick={nextSlide}/>

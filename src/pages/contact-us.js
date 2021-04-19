@@ -10,7 +10,10 @@ const contactUs = () => {
             <SEO title="Contact" /> 
             <div className="contact-us">
 
-                <div className="container_contact_1">
+                <div className="container_contact_1"
+                data-aos='fade-left'
+                data-aos-once='true'
+                >
 
                     <h1>Contactez nous</h1>
                     <h2>Remplissez le formulaire ci-dessous ou appelez-nous directement au 05 56 48 36 49</h2>
@@ -34,7 +37,10 @@ const contactUs = () => {
                     </form>
                 </div>
 
-                <div className="container_contact_2">
+                <div className="container_contact_2"
+                data-aos='fade-down'
+                data-aos-once='true'
+                >
                     <div className="adresse_1">
                         <h3>Homners immobilier Bordeaux</h3>
                         <p>

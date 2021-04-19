@@ -12,8 +12,13 @@ const services = () => {
         <Layout>
             <SEO title="Services" /> 
             <section className="services">
-                <h1>Nos services</h1>
-                <div className="container_image">
+                <h1
+                data-aos='fade-down'
+                data-aos-once='true'
+                >
+                    Nos services
+                </h1>
+                <div className="container_image" data-aos='fade-down' data-aos-once='true' data-aos-delay='150'>
                     <StaticImage src='../images/house-1.jpg' alt='' className='img_services'/>
                 </div>
             </section>

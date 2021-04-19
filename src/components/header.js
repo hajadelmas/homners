@@ -93,23 +93,40 @@ function Header({ siteTitle }) {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className="nav-item" onMouseEnter={MouseEnter} onMouseLeave={MouseLeave}>
-                            <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/services' className='nav-links' onClick={closeMobileMenu}
+                            data-aos='fade-right'
+                            data-aos-duration='500'
+                            data-aos-anchor-placement='bottom left'
+                            >
                                 NOS SERVICES {button && <FaCaretDown className='CaretDown' />}
                             </Link>
                             {dropdown && <Dropdown />}
                         </li>
                         <li className="nav-item">
-                            <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/products' className='nav-links' onClick={closeMobileMenu}
+                            data-aos='fade-right'
+                            data-aos-duration='500'
+                            data-aos-delay='100'
+                            
+                            >
                                 NOS BIENS
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/posts' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/posts' className='nav-links' onClick={closeMobileMenu}
+                            data-aos='fade-right'
+                            data-aos-duration='500'
+                            data-aos-delay='150'
+                            >
                                 BLOG
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/partners' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/partners' className='nav-links' onClick={closeMobileMenu}
+                            data-aos='fade-right'
+                            data-aos-duration='500'
+                            data-aos-delay='200'
+                            >
                                 NOS PARTENAIRES
                             </Link>
                         </li>

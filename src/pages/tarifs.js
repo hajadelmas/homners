@@ -11,12 +11,15 @@ const tarifs = () => {
         <Layout>
             <SEO title="Tarifs" /> 
             <div className="tarifs">
-                <h1>Nos Tarifs</h1>
-                <h3>Estimation gratuite, valable pour tout type de biens sans engagement.</h3>
-                <p>L'agence immobilière Homners est une agence immobilière classique, dont la rémunération est forfaitaire, et non pas à la commission, ce qui permet de générer d'importantes économies à nos clients.</p>
-                <p>Nos forfaits s'appliquent uniquement une fois la vente de votre bien entériné par l'acte notarial, comme dans toute transaction assurée par un professionnel.</p>
-                <p>Nous apportons également des services complémentaires pour mettre en valeur votre bien, <strong>a nos frais pour apporter une revalorisation et donc optimiser le prix de vente</strong>.</p>
-                <p>L'estimation de votre maison ou votre appartement est gratuite, et vous décidez ensuite de la manière dont nous allons travailler ensemble, en fonction de vos besoins et de vos attentes.</p>
+                <h1 data-aos='fade-down' data-aos-once='true'>Nos Tarifs</h1>
+                <h3 data-aos='fade-down' data-aos-delay='200' data-aos-once='true'>Estimation gratuite, valable pour tout type de biens sans engagement.</h3>
+                <div data-aos='fade-down' data-aos-delay='250' data-aos-once='true'>
+                    <p>L'agence immobilière Homners est une agence immobilière classique, dont la rémunération est forfaitaire, et non pas à la commission, ce qui permet de générer d'importantes économies à nos clients.</p>
+                    <p>Nos forfaits s'appliquent uniquement une fois la vente de votre bien entériné par l'acte notarial, comme dans toute transaction assurée par un professionnel.</p>
+                    <p>Nous apportons également des services complémentaires pour mettre en valeur votre bien, <strong>a nos frais pour apporter une revalorisation et donc optimiser le prix de vente</strong>.</p>
+                    <p>L'estimation de votre maison ou votre appartement est gratuite, et vous décidez ensuite de la manière dont nous allons travailler ensemble, en fonction de vos besoins et de vos attentes.</p>
+                </div>
+                
             </div>
 
             <div className="container_carre">
