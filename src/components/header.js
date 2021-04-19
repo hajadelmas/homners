@@ -96,7 +96,8 @@ function Header({ siteTitle }) {
                             <Link to='/services' className='nav-links' onClick={closeMobileMenu}
                             data-aos='fade-right'
                             data-aos-duration='500'
-                            data-aos-anchor-placement='bottom left'
+                            data-aos-anchor-placement='top top'
+
                             >
                                 NOS SERVICES {button && <FaCaretDown className='CaretDown' />}
                             </Link>
@@ -107,7 +108,7 @@ function Header({ siteTitle }) {
                             data-aos='fade-right'
                             data-aos-duration='500'
                             data-aos-delay='100'
-                            
+                            data-aos-anchor-placement='top top'
                             >
                                 NOS BIENS
                             </Link>
@@ -117,6 +118,7 @@ function Header({ siteTitle }) {
                             data-aos='fade-right'
                             data-aos-duration='500'
                             data-aos-delay='150'
+                            data-aos-anchor-placement='top top'
                             >
                                 BLOG
                             </Link>
@@ -126,6 +128,7 @@ function Header({ siteTitle }) {
                             data-aos='fade-right'
                             data-aos-duration='500'
                             data-aos-delay='200'
+                            data-aos-anchor-placement='top top'
                             >
                                 NOS PARTENAIRES
                             </Link>
