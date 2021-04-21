@@ -1,7 +1,8 @@
 
 
 .HeroSection {
-    height: 90vh;
+    height: 100vh;
+    margin-top: -80px;
     max-height: 1100px;
     position: relative;
     overflow: hidden;
@@ -116,7 +117,7 @@
         font-size: clamp(1rem, 5vw, .1rem);
         margin-bottom: 1.5rem;
         text-transform: uppercase;
-        font-weight: 500;
+        font-weight: 700;
         letter-spacing: 1rem;
         margin-right: -1rem;
         text-align: center;

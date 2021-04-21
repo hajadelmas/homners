@@ -94,8 +94,9 @@ function Header({ siteTitle }) {
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className="nav-item" onMouseEnter={MouseEnter} onMouseLeave={MouseLeave}>
                             <Link to='/services' className='nav-links' onClick={closeMobileMenu}
-                            data-aos='fade-right'
+                            data-aos='fade-left'
                             data-aos-duration='500'
+                            data-aos-delay='150'
                             data-aos-anchor-placement='top top'
 
                             >
@@ -105,7 +106,7 @@ function Header({ siteTitle }) {
                         </li>
                         <li className="nav-item">
                             <Link to='/products' className='nav-links' onClick={closeMobileMenu}
-                            data-aos='fade-right'
+                            data-aos='fade-left'
                             data-aos-duration='500'
                             data-aos-delay='100'
                             data-aos-anchor-placement='top top'
@@ -115,15 +116,15 @@ function Header({ siteTitle }) {
                         </li>
                         <li className="nav-item">
                             <Link to='/posts' className='nav-links' onClick={closeMobileMenu}
-                            data-aos='fade-right'
+                            data-aos='fade-left'
                             data-aos-duration='500'
-                            data-aos-delay='150'
+                            // data-aos-delay='150'
                             data-aos-anchor-placement='top top'
                             >
                                 BLOG
                             </Link>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link to='/partners' className='nav-links' onClick={closeMobileMenu}
                             data-aos='fade-right'
                             data-aos-duration='500'
@@ -132,14 +133,14 @@ function Header({ siteTitle }) {
                             >
                                 NOS PARTENAIRES
                             </Link>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                             <Link to='/contact-us' className='nav-links-mobile' onClick={closeMobileMenu}>
                                 CONTACT
                             </Link>
                         </li>
                     </ul>
-                    {button && <button className=' btn btn--outline'><Link to='/contact-us'>CONTACT</Link></button>}
+                    {button && <button className=' btn btn--outline'><Link to='/contact-us'>ESTIMATION GRATUITE / CONTACT</Link></button>}
                 </div>
             </nav>
         </>

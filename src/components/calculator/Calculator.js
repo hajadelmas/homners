@@ -9,7 +9,7 @@ import Display from './Display'
 
 function App() {
 
-  const [amountValue, setAmountValue] = useState(5000)
+  const [amountValue, setAmountValue] = useState(70000)
   const [yearsValue, setYearsValue] = useState(3)
 
 

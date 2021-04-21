@@ -5,18 +5,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     position: sticky;
-    background-color: #fff;
+    // background-color: #fff;
+    background: transparent;
     top: 0;
     z-index: 999;
 }
 
-// .navbar.active {
-  // background-color: #fff;
-//     // box-shadow: 0px 1px 15px grey;
-// }
+.navbar.active {
+  background-color: #fff;
+    // box-shadow: 0px 1px 15px grey;
+}
 
 .navbar-container {
     display: flex;
@@ -28,7 +29,7 @@
 }
 
 .navbar-logo-link {
-    color: #fff;
+    // color: #fff;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -45,7 +46,7 @@
 
 .nav-menu {
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(4, auto);
     grid-gap: 2em;
     list-style: none;
     text-align: center;
@@ -56,21 +57,25 @@
 
 .nav-item {
     height: 40px;
+    
 }
 
 .nav-links {
-    color: #0099CE;
+    // color: #0099CE;
+    color: black;
     display: flex;
     align-items: center;
     text-decoration: none;
     // padding: 0.5rem 1rem;
     height: 100%;
     white-space: nowrap;
+    transition: all 0.1s ease-out;
 
-    &:hover {
-      border-bottom: 4px solid #0099CE;
-      transition: all 0.2s ease-out;
-    }
+    // &:hover {
+    //   // border-bottom: 4px solid #0099CE;
+    //   transform: translateY(-2px);
+    //   transition: all 0.1s ease-out;
+    // }
 
     .CaretDown {
       margin-left: 0.4em;
@@ -94,11 +99,12 @@
 
 .btn {
     /* padding: 8px 20px; */
+    width: 700px;
     border-radius: 2px;
     outline: none;
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: bold;
     margin-right: 1em;
 
@@ -111,7 +117,7 @@
 .btn--outline {
     background-color: transparent;
     color: #0099CE;
-    padding: 8px 20px;
+    padding: 8px 10px;
     border: 1px solid #0099CE;
     transition: all 0.3s ease-out;
 

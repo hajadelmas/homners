@@ -17,19 +17,19 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    // justify-content: center;
     // max-width: 300px;
     
 
     .products_details {
         position: relative;
         display: flex;
-        // justify-content: space-around;
         flex-direction: column;
         max-width: 250px;
-        // margin: 0 1em 2em;
+        margin-top: 2em;
+        margin: 3em 1.9em 0;
         border-radius: 25px;
-        box-shadow: 1px 1px 5px grey;
+        box-shadow: 1px 1px 3px grey;
         padding: .9em;
 
         img {
@@ -52,6 +52,10 @@
             //     background-color: ;
             // }
         }
+    }
+
+    @media screen and (max-width: 1024px) {
+        justify-content: center;
     }
 
     @media screen and (max-width: 500px) {

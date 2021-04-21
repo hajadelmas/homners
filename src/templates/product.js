@@ -13,6 +13,29 @@ import "slick-carousel/slick/slick-theme.css";
 import "./product_template.scss"
 
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none" }}
+      onClick={onClick}
+    />
+  );
+}
+
+
 export default ({ data }) => {
 //   const { title, date } = data.markdownRemark.frontmatter
 //   const __html = data.markdownRemark.html
@@ -25,6 +48,8 @@ var settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   // adaptiveHeight: true
+  nextArrow: <SampleNextArrow />,
+  prevArrow: <SamplePrevArrow />,
 };
 
 const { titre, description, commune, photos, lienLeboncoin } = data.datoCmsProduct
