@@ -29,8 +29,8 @@ const travaux = () => {
                 <div className='compare_container'>
                     <h1>Avant</h1>
                     <ImgComparisonSlider>
-                        <img slot="before" src={Img1} alt=''/>
-                        <img slot="after" src={Img2} alt=''/>
+                        <img slot="before" src={Img2} alt=''/>
+                        <img slot="after" src={Img1} alt=''/>
                     </ImgComparisonSlider>
                     <h1>Après</h1>
                 </div>

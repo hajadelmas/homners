@@ -27,7 +27,7 @@ const posts = ({ data }) => {
                 <div className="articles_container">
                     {
                         posts.map(({ node: post }, i) => {
-                          if((i+1) % 2 == 0) {
+                          if((i+1) % 2 === 0) {
                             return (
                               <div key={post.id} className='articles_pos1'>
                                 <div  className='articles'>

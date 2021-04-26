@@ -30,7 +30,7 @@ const Footer = () => {
                     <Link to='/contact-us'>Contact</Link>
                 </div>
                 <div className='mysite'>
-                    Copyright © {new Date().getFullYear()}. Tous droits réservés. <a href="https://www.studio-haja.fr" target='_blank'> Créé par Studio Haja.</a>
+                    Copyright © {new Date().getFullYear()}. Tous droits réservés. <a href="https://www.studio-haja.fr" target='_blank' rel="noreferrer"> Créé par Studio Haja.</a>
                 </div>
             </div>
             

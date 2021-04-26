@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
-import { StaticImage, GatsbyImage } from 'gatsby-plugin-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 import './post_template.scss'
 

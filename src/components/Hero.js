@@ -18,21 +18,21 @@ const Hero = () => {
 
     const timeout = useRef(null)
 
-    // useEffect(() => {
+    useEffect(() => {
         
-    //     const nextSlide= () => {
-    //         setCurrent(current => (current === length -1 ? 0 : current + 1))
-    //     }
+        const nextSlide= () => {
+            setCurrent(current => (current === length -1 ? 0 : current + 1))
+        }
 
-    //     timeout.current = setTimeout(nextSlide, 5000)
+        timeout.current = setTimeout(nextSlide, 5000)
 
-    //     return function () {
-    //         if(timeout.current) {
-    //             clearTimeout(timeout.current)
-    //         }
-    //     }
+        return function () {
+            if(timeout.current) {
+                clearTimeout(timeout.current)
+            }
+        }
 
-    // }, [current, length])
+    }, [current, length])
 
     const nextSlide = () => {
         if(timeout.current) {

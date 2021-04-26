@@ -93,34 +93,18 @@ function Header({ siteTitle }) {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className="nav-item" onMouseEnter={MouseEnter} onMouseLeave={MouseLeave}>
-                            <Link to='/services' className='nav-links' onClick={closeMobileMenu}
-                            data-aos='fade-left'
-                            data-aos-duration='500'
-                            data-aos-delay='150'
-                            data-aos-anchor-placement='top top'
-
-                            >
+                            <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
                                 NOS SERVICES {button && <FaCaretDown className='CaretDown' />}
                             </Link>
                             {dropdown && <Dropdown />}
                         </li>
                         <li className="nav-item">
-                            <Link to='/products' className='nav-links' onClick={closeMobileMenu}
-                            data-aos='fade-left'
-                            data-aos-duration='500'
-                            data-aos-delay='100'
-                            data-aos-anchor-placement='top top'
-                            >
+                            <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
                                 NOS BIENS
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/posts' className='nav-links' onClick={closeMobileMenu}
-                            data-aos='fade-left'
-                            data-aos-duration='500'
-                            // data-aos-delay='150'
-                            data-aos-anchor-placement='top top'
-                            >
+                            <Link to='/posts' className='nav-links' onClick={closeMobileMenu}>
                                 BLOG
                             </Link>
                         </li>
