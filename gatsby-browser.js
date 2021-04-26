@@ -10,6 +10,15 @@
 import './src/styles/global.scss'
 import 'aos/dist/aos.css'
 
+// import React, {useEffect} from "react"
+// import AOS from 'aos'
+
+
+// AOS.init()
+// AOS.refresh()
+
+
+
 export const onInitialClientRender = () => {
     setTimeout(function() {
         document.getElementById("___loader").style.display = "none"
