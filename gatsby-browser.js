@@ -13,5 +13,5 @@ import 'aos/dist/aos.css'
 export const onInitialClientRender = () => {
     setTimeout(function() {
         document.getElementById("___loader").style.display = "none"
-    }, 3000)
+    }, 7000)
 }
