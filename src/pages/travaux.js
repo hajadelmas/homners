@@ -14,8 +14,8 @@ import Img7 from '../images/travaux/angle-avant.jpg'
 import Img8 from '../images/travaux/angle-apres.jpg'
 import Img9 from '../images/travaux/coin-avant.jpg'
 import Img10 from '../images/travaux/coin-apres.jpg'
-import Img12 from '../images/travaux/cuisine-apres.jpg'
-import Img11 from '../images/travaux/cuisine-avant.jpg'
+// import Img12 from '../images/travaux/cuisine-apres.jpg'
+// import Img11 from '../images/travaux/cuisine-avant.jpg'
 import Img13 from '../images/travaux/evier-avant.jpg'
 import Img14 from '../images/travaux/evier-apres.jpg'
 import Img15 from '../images/travaux/plainte-avant.jpg'
@@ -80,14 +80,14 @@ const travaux = () => {
                     </ImgComparisonSlider>
                     <h1>Après</h1>
                 </div>
-                <div className='compare_container'>
+                {/* <div className='compare_container'>
                     <h1>Avant</h1>
                     <ImgComparisonSlider>
                         <img slot="before" src={Img12} alt=''/>
                         <img slot="after" src={Img11} alt=''/>
                     </ImgComparisonSlider>
                     <h1>Après</h1>
-                </div>
+                </div> */}
                 <div className='compare_container'>
                     <h1>Avant</h1>
                     <ImgComparisonSlider>
