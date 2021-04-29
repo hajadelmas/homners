@@ -80,7 +80,7 @@ const Timeline = () => {
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#C8E7FA', color: 'black' }}
                     contentArrowStyle={{ borderRight: '7px solid  #C8E7FA' }}
-                    date="pendant la mise en vente la mise en vente"
+                    date="pendant la mise en vente"
                     dateClassName='date_class2'
                     iconStyle={{ background: '#C8E7FA', color: '#fff' }}
                     icon={<FaInternetExplorer />}
@@ -96,7 +96,7 @@ const Timeline = () => {
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#C8E7FA', color: 'black' }}
                     contentArrowStyle={{ borderRight: '7px solid  #C8E7FA' }}
-                    date="pendant la mise en vente la mise en vente"
+                    date="pendant la mise en vente"
                     dateClassName='date_class2'
                     iconStyle={{ background: '#C8E7FA', color: '#fff' }}
                     icon={<MdPhoneInTalk />}
@@ -113,7 +113,7 @@ const Timeline = () => {
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#C8E7FA', color: 'black' }}
                     contentArrowStyle={{ borderRight: '7px solid  #C8E7FA' }}
-                    date="pendant la mise en vente la mise en vente"
+                    date="pendant la mise en vente"
                     dateClassName='date_class2'
                     iconStyle={{ background: '#C8E7FA', color: '#fff' }}
                     icon={<BsFillPeopleFill />}
@@ -129,7 +129,7 @@ const Timeline = () => {
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#C8E7FA', color: 'black' }}
                     contentArrowStyle={{ borderRight: '7px solid  #C8E7FA' }}
-                    date="pendant la mise en vente la mise en vente"
+                    date="pendant la mise en vente"
                     dateClassName='date_class2'
                     iconStyle={{ background: '#C8E7FA', color: '#fff' }}
                     icon={<ImStatsDots />}
@@ -147,7 +147,7 @@ const Timeline = () => {
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#499f68', color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid  #499f68' }}
-                    date="Apres la mise en vente la mise en vente"
+                    date="Apres la mise en vente"
                     dateClassName='date_class3'
                     iconStyle={{ background: '#499f68', color: '#fff' }}
                     icon={<FaRegHandshake />}
@@ -163,7 +163,7 @@ const Timeline = () => {
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#499f68', color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid  #499f68' }}
-                    date="Apres la mise en vente la mise en vente"
+                    date="Apres la mise en vente"
                     dateClassName='date_class3'
                     iconStyle={{ background: '#499f68', color: '#fff' }}
                     icon={<FaFileSignature />}
@@ -180,7 +180,7 @@ const Timeline = () => {
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#499f68', color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid  #499f68' }}
-                    date="Apres la mise en vente la mise en vente"
+                    date="Apres la mise en vente"
                     dateClassName='date_class3'
                     iconStyle={{ background: '#499f68', color: '#fff' }}
                     icon={<BsTools />}

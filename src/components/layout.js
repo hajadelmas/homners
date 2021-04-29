@@ -12,11 +12,6 @@ import Footer from "./Footer"
 
 const Layout = ({ children }) => {
 
-  // useEffect(() => {
-  //   AOS.init()
-  //   AOS.refresh()
-  // }, [])
-
   let AOS;
 
   useEffect(() => {

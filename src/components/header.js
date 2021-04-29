@@ -84,7 +84,7 @@ function Header({ siteTitle }) {
                             // quality={100}
                             formats={["AUTO", "WEBP", "AVIF"]}
                             alt="homners logo"
-                            style={{ width: `50%` }}
+                            style={{ width: `100%` }}
                             />
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
