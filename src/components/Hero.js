@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react'
 // import { Button } from './Button'
 import { IoMdArrowRoundForward } from 'react-icons/io'
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5'
+import { IoIosArrowDown } from 'react-icons/io'
 import { SliderData } from './SliderData'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -98,7 +99,7 @@ const Hero = () => {
                                     className='Button'
                                     to={slide.path}
                                     primary='true'
-                                    css={`max-width: 160px`}
+                                    // css={`max-width: 160px`}
                                     data-aos="zoom-out"
                                     data-aos-duration="500"
                                     data-aos-delay='250'
@@ -118,6 +119,10 @@ const Hero = () => {
                 <div className='SliderButtons'>
                     <IoArrowBack className='PrevArrow' onClick={prevSlide}/>
                     <IoArrowForward className='NextArrow' onClick={nextSlide}/>
+                </div>
+
+                <div className="arrow_down">
+                    <IoIosArrowDown />
                 </div>
             </div>
         </section>

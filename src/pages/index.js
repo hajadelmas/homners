@@ -97,7 +97,7 @@ const IndexPage = ({ data }) => {
         data-aos-once='true'
         >
           <AiOutlineFormatPainter />
-          <h3>service additionnels</h3>
+          <h3>services additionnels</h3>
         </div>
 
         <div className="info_container"
@@ -117,7 +117,7 @@ const IndexPage = ({ data }) => {
     <section className="calculs">
       <div className="home_padding">
         <h1>Calcul de vos economies</h1>
-        <p>L'agence immobilière Homners, ce sont des honoraires réduits fixes et sans surprises : <strong> 15 à 30% moins cher qu'une agence traditionnelle</strong> .</p>
+        <p>L'agence immobilière Homners, ce sont des honoraires réduits fixes et sans surprise : <strong> 15 à 30% moins cher qu'une agence traditionnelle</strong> .</p>
       </div>
 
       <div className='calculs_container'>

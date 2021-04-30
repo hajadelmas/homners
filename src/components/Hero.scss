@@ -12,7 +12,7 @@
     }
 
     @media screen and (max-width: 768px){
-        height: 80vh;
+        height: 100vh;
     }
 }
 
@@ -143,6 +143,10 @@
     right: 50px;
     display: flex;
     z-index: 10;
+
+    @media screen and (max-width: 768px){
+        bottom: 100px;
+    }
 }
 
 
@@ -184,4 +188,21 @@
     &:hover {
         transform: translateY(-2px);
     }
+}
+
+.arrow_down {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 999;
+    color: white;
+    font-size: 2rem;
+    animation: bounce 1.5s ease infinite;
+}
+
+@keyframes bounce{
+    from {bottom: 0px;}
+    50%  {bottom: 30px;}
+    to   {bottom: 0px;}
 }

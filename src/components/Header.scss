@@ -46,7 +46,7 @@
 
 .nav-menu {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(6, auto);
     grid-gap: 2em;
     list-style: none;
     text-align: center;
@@ -178,10 +178,10 @@
     }
 
     .nav-item {
-      padding: 2em 2em 0;
+      padding: 1em 2em 0;
 
       &:nth-child(1) {
-        margin-top: 5em;
+        margin-top: 2em;
       }
     }
   
@@ -262,7 +262,7 @@
     transform: translate(0%, 70%);
   }
 
-  .navbar-logo img {
-    width: 100%;
-  }
+  // .navbar-logo img {
+  //   width: 70%;
+  // }
 }

@@ -30,7 +30,7 @@ const Timeline = () => {
                     <h4 className="vertical-timeline-element-subtitle">L'estimation est 100% gratuite et sans engagement. Notre expert réalisera l'estimation de votre bien en analysant plusieurs données :</h4>
                     
                     <ul>
-                        <li>les biens en vente actuellement sur votre secteur et similaire au vôtre</li>
+                        <li>les biens en vente actuellement sur votre secteur et similaires au vôtre</li>
                         <li>les biens vendus dans les 3 derniers mois pour avoir une valeur juste des prix (document notaire, etc..)</li>
                         <li>les tendances actuelles du marché immobilier local</li>
                         <li>les points d'intérêts à proximité de votre bien</li>
@@ -67,7 +67,7 @@ const Timeline = () => {
                     <h3 className="vertical-timeline-element-title">FICHE TECHNIQUE DU BIEN</h3>
                     {/* <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4> */}
                     <p>
-                    Toutes les informations techniques de votre bien seront notées par l'expert sur une fiche descriptive lors du rendez-vous d'estimation afin d'avoir tous les éléments nécessaire à fournir aux potentiels acquéreurs.
+                    Toutes les informations techniques de votre bien seront notées par l'expert sur une fiche descriptive lors du rendez-vous d'estimation afin d'avoir tous les éléments nécessaires à fournir aux potentiels acquéreurs.
                     Cette fiche est transmise aux prospects avant chaque visite.
                     </p>
                 </VerticalTimelineElement>
@@ -85,10 +85,10 @@ const Timeline = () => {
                     iconStyle={{ background: '#C8E7FA', color: '#fff' }}
                     icon={<FaInternetExplorer />}
                 >
-                    <h3 className="vertical-timeline-element-title">PUBLICITE INTERNET</h3>
+                    <h3 className="vertical-timeline-element-title">DIFFUSION ANNONCE</h3>
                     {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}
                     <p>
-                    Une fois validée, les annonces sont automatiquement diffusées sur les sites Internet principaux. Aujourd’hui, 95% des acheteurs trouvent leurs biens en naviguant sur des sites d’annonces immobilières.
+                    Une fois validée, les annonces sont automatiquement diffusées sur les sites Internet principaux. Aujourd’hui, 95% des acheteurs trouvent leurs biens en naviguant sur des sites d’annonces immobilières. De plus, votre annonce sera automatiquement exposé sur la vitrine de notre agence en centre ville de Bordeaux pour une visibilité maximale.
                     </p>
                 </VerticalTimelineElement>
 
@@ -104,7 +104,7 @@ const Timeline = () => {
                     <h3 className="vertical-timeline-element-title">SECRETARIAT TELEPHONIQUE</h3>
                     <h4 className="vertical-timeline-element-subtitle">Ne vous embêtez pas ! nous réceptionnons tous les appels, mails, et sms de la part des clients intéressés par les annonces:</h4>
                     <ul>
-                        <li>gestions des appels et mails qui suivront la diffusion des annonces</li>
+                        <li>gestion des appels et mails qui suivront la diffusion des annonces</li>
                         <li>nous analysons le profil et la solvabilité des potentiels clients qui souhaitent visiter votre bien, afin de ne sélectionner que les profils viables et avec un financement validé, et non des curieux.</li>
                     </ul>
                 </VerticalTimelineElement>

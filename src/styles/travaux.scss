@@ -24,13 +24,29 @@
         margin-top: 2em;
     }
 
+    .travaux_sign {
+        margin-top: 1em;
+        color: $primary-color;
+        stroke: $primary-color;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 4rem;
+
+    }
+
     @media screen and (max-width: 500px){
         padding: 0 2em;
+
+        .travaux_sign {
+            font-size: 3rem;
+        }
     }
 }
 
 .container_travaux {
-    margin-top: 7em;
+    margin-top: 5em;
 
     h1 {
         font-size: $bigTitles;

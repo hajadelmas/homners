@@ -2,6 +2,9 @@ import React from 'react'
 import Layout from '../components/layout'
 import { ImgComparisonSlider } from '@img-comparison-slider/react';
 import SEO from '../components/seo'
+import { IoIosConstruct } from 'react-icons/io'
+import { AiFillFormatPainter } from 'react-icons/ai'
+import { FaTractor, FaHardHat } from 'react-icons/fa'
 
 
 import Img1 from '../images/travaux/porte_avant (1).jpeg'
@@ -32,9 +35,15 @@ const travaux = () => {
         <Layout>
             <SEO title="Travaux / Home Stagging" /> 
             <div className="travaux">
-                <h1>Travaux / Home Stagging</h1>
+                <h1>Travaux / Home Staging</h1>
                 <p>Confiez-nous l'embellissement de votre bien : jardin, mur, rénovations, petits travaux, embellissement intérieur ou extérieur, et avec un minimum d'investissement, obtenez une valorisation incomparable.</p>
                 <p><strong>Nous prenons ces travaux à notre CHARGE !</strong></p>
+                <div className='travaux_sign'>
+                    <IoIosConstruct/>
+                    <AiFillFormatPainter />
+                    <FaHardHat />
+                    <FaTractor />
+                </div>
             </div>
 
             <div className='container_travaux'>

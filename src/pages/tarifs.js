@@ -15,8 +15,8 @@ const tarifs = () => {
                 <h3 data-aos='fade-down' data-aos-delay='200' data-aos-once='true'>Estimation gratuite, valable pour tout type de biens sans engagement.</h3>
                 <div data-aos='fade-down' data-aos-delay='250' data-aos-once='true'>
                     <p>L'agence immobilière Homners est une agence immobilière classique, dont la rémunération est forfaitaire, et non pas à la commission, ce qui permet de générer d'importantes économies à nos clients.</p>
-                    <p>Nos forfaits s'appliquent uniquement une fois la vente de votre bien entériné par l'acte notarial, comme dans toute transaction assurée par un professionnel.</p>
-                    <p>Nous apportons également des services complémentaires pour mettre en valeur votre bien, <strong>a nos frais pour apporter une revalorisation et donc optimiser le prix de vente</strong>.</p>
+                    <p>Nos forfaits s'appliquent uniquement une fois la vente de votre bien entérinée par l'acte notarial, comme dans toute transaction assurée par un professionnel.</p>
+                    <p>Nous apportons également des services complémentaires pour mettre en valeur votre bien, <strong>à nos frais pour apporter une revalorisation et donc optimiser le prix de vente</strong>.</p>
                     <p>L'estimation de votre maison ou votre appartement est gratuite, et vous décidez ensuite de la manière dont nous allons travailler ensemble, en fonction de vos besoins et de vos attentes.</p>
                 </div>
                 
@@ -56,10 +56,10 @@ const tarifs = () => {
                         <li><BsFillHouseFill /> Agenda personnalisé</li>
                         <li><BsFillHouseFill /> Négociation d'offres d'achat</li>
                         <li><BsFillHouseFill /> Dossier de vente et accompagnement</li>
-                        <li><BsFillHouseFill /> Visites assurées par notre agent immobilier de quartier</li>
-                        <li><BsFillHouseFill /> Visite virtuel</li>
-                        <li><BsFillHouseFill /> Service photo professionnel</li>
-                        <li><BsFillHouseFill /> Essai du logement</li>
+                        <li className='color_prem'><BsFillHouseFill /> Visites assurées par notre agent immobilier de quartier</li>
+                        <li className='color_prem'><BsFillHouseFill /> Visite virtuelle</li>
+                        <li className='color_prem'><BsFillHouseFill /> Service photo professionnel</li>
+                        <li className='color_prem'><BsFillHouseFill /> Essai du logement</li>
                     </ul>
                 </div>
 
@@ -77,17 +77,17 @@ const tarifs = () => {
                         <li><BsFillHouseFill /> Agenda personnalisé</li>
                         <li><BsFillHouseFill /> Négociation d'offres d'achat</li>
                         <li><BsFillHouseFill /> Dossier de vente et accompagnement</li>
-                        <li><BsFillHouseFill /> Visites assurées par notre agent immobilier de quartier</li>
-                        <li><BsFillHouseFill /> Visite virtuel</li>
-                        <li><BsFillHouseFill /> Service photo professionnel</li>
-                        <li><BsFillHouseFill /> Service valorisation *</li>
-                        <li><BsFillHouseFill /> Service diagnostic technique</li>
-                        <li><BsFillHouseFill /> Embellissement intérieur (peinture)</li>
-                        <li><BsFillHouseFill /> Désencombrement ou nettoyage du jardin</li>
-                        <li><BsFillHouseFill /> HOME STAGGING</li>
-                        <li><BsFillHouseFill /> Aide au déménagement</li>
-                        <li><BsFillHouseFill /> Gestion de la vente et de l'achat dans le carde d'une mutation professionnelle (on vous trouve un bien et on vend le vôtre)</li>
-                        <li><BsFillHouseFill /> Essai du logement</li>
+                        <li className='color_prem'><BsFillHouseFill /> Visites assurées par notre agent immobilier de quartier</li>
+                        <li className='color_prem'><BsFillHouseFill /> Visite virtuelle</li>
+                        <li className='color_prem'><BsFillHouseFill /> Service photo professionnel</li>
+                        <li className='color_prem'><BsFillHouseFill /> Essai du logement</li>
+                        <li className='color_prem2'><BsFillHouseFill /> Service valorisation *</li>
+                        <li className='color_prem2'><BsFillHouseFill /> Service diagnostics techniques</li>
+                        <li className='color_prem2'><BsFillHouseFill /> Embellissement intérieur (peinture)</li>
+                        <li className='color_prem2'><BsFillHouseFill /> Désencombrement ou nettoyage du jardin</li>
+                        <li className='color_prem2'><BsFillHouseFill /> HOME STAGGING</li>
+                        <li className='color_prem2'><BsFillHouseFill /> Aide au déménagement</li>
+                        <li className='color_prem2'><BsFillHouseFill /> Gestion de la vente et de l'achat dans le carde d'une mutation professionnelle (on vous trouve un bien et on vend le vôtre)</li>
                     </ul>
                 </div>
             </div>

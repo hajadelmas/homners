@@ -84,7 +84,7 @@ function Header({ siteTitle }) {
                             // quality={100}
                             formats={["AUTO", "WEBP", "AVIF"]}
                             alt="homners logo"
-                            style={{ width: `100%` }}
+                            style={{ width: `50%` }}
                             />
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
@@ -94,9 +94,20 @@ function Header({ siteTitle }) {
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className="nav-item" onMouseEnter={MouseEnter} onMouseLeave={MouseLeave}>
                             <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                                NOS SERVICES {button && <FaCaretDown className='CaretDown' />}
+                                {/* NOS SERVICES {button && <FaCaretDown className='CaretDown' />} */}
+                                NOS SERVICES
                             </Link>
-                            {dropdown && <Dropdown />}
+                            {/* {dropdown && <Dropdown />} */}
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/tarifs' className='nav-links' onClick={closeMobileMenu}>
+                                TARIFS
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/travaux' className='nav-links' onClick={closeMobileMenu}>
+                                NOS EMBELLISSEMENTS
+                            </Link>
                         </li>
                         <li className="nav-item">
                             <Link to='/products' className='nav-links' onClick={closeMobileMenu}>

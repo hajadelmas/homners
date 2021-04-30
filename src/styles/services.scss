@@ -26,6 +26,10 @@
 .timeline_container {
     margin-top: 2em;
 
+    li::first-letter {
+        text-transform: capitalize;
+    }
+
     .vertical-timeline::before {
         background: $primary-color;
     }
