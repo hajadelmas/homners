@@ -88,7 +88,7 @@ const Timeline = () => {
                     <h3 className="vertical-timeline-element-title">DIFFUSION ANNONCE</h3>
                     {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}
                     <p>
-                    Une fois validée, les annonces sont automatiquement diffusées sur les sites Internet principaux. Aujourd’hui, 95% des acheteurs trouvent leurs biens en naviguant sur des sites d’annonces immobilières. De plus, votre annonce sera automatiquement exposé sur la vitrine de notre agence en centre ville de Bordeaux pour une visibilité maximale.
+                    Une fois validée, les annonces sont automatiquement diffusées sur les sites Internet principaux. Aujourd’hui, 95% des acheteurs trouvent leurs biens en naviguant sur des sites d’annonces immobilières. De plus, votre annonce sera automatiquement exposée sur la vitrine de notre agence en centre ville de Bordeaux pour une visibilité maximale.
                     </p>
                 </VerticalTimelineElement>
 

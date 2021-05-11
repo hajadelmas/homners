@@ -85,7 +85,7 @@ const tarifs = () => {
                         <li className='color_prem2'><BsFillHouseFill /> Service diagnostics techniques</li>
                         <li className='color_prem2'><BsFillHouseFill /> Embellissement intérieur (peinture)</li>
                         <li className='color_prem2'><BsFillHouseFill /> Désencombrement ou nettoyage du jardin</li>
-                        <li className='color_prem2'><BsFillHouseFill /> HOME STAGGING</li>
+                        <li className='color_prem2'><BsFillHouseFill /> HOME STAGING</li>
                         <li className='color_prem2'><BsFillHouseFill /> Aide au déménagement</li>
                         <li className='color_prem2'><BsFillHouseFill /> Gestion de la vente et de l'achat dans le carde d'une mutation professionnelle (on vous trouve un bien et on vend le vôtre)</li>
                     </ul>
