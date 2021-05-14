@@ -26,7 +26,7 @@ const contactUs = () => {
 
                         <input type="text" name="surname" placeholder='Votre Prénom' />
 
-                        <input type="tel" id='phone' name="phone" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder='06-00-00-00-00' required />
+                        <input type="tel" id='phone' name="phone" pattern="" placeholder='06 00 00 00' required />
                     
                         <input type="email" name="email" placeholder='Email' />
 

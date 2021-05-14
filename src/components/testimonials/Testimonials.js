@@ -21,38 +21,35 @@ const Testimonials = () => {
         interval={6100}
         >
             <div>
-                <StaticImage src='../../images/grid-1.jpg' alt=''/>
+                <StaticImage src='../../images/users-icons.png' alt=''/>
                 {/* <img src="../../images/grid-1.jpg" alt=""/> */}
                 <div className="myCarousel">
-                    <h3>Shirley Fultz</h3>
-                    <h4>Designer</h4>
+                    <h3>Eric S.</h3>
+                    <h4>Avis recueilli par MeilleursAgents.com - Ref. MA2077818948</h4>
                     <p>
-                    It's freeing to be able to catch up on customized news and not be
-                    distracted by a social media element on the same site
+                    Agent immobilier disponible, très sympathique et compétent.
                     </p>
                 </div>
             </div>
             <div>
-                <StaticImage src='../../images/grid-2.jpg' alt=''/>
+                <StaticImage src='../../images/users-icons.png' alt=''/>
                 {/* <img src="../../images/grid-2.jpg" alt=""/> */}
                 <div className="myCarousel">
-                    <h3>Daniel Keystone</h3>
-                    <h4>Designer</h4>
+                    <h3>Julien S.</h3>
+                    <h4>Avis recueilli par MeilleursAgents.com - Ref. MA2082408608</h4>
                     <p>
-                    The simple and intuitive design makes it easy for me use. I highly
-                    recommend Fetch to my peers.
+                    Agents très compétents et conviviaux. Excellente expérience pour notre premier achat immobilier.
                     </p>
                 </div>
             </div>
             <div>
-                <StaticImage src='../../images/grid-3.jpg' alt=''/>
+                <StaticImage src='../../images/users-icons.png' alt=''/>
                 {/* <img src="../../images/grid-3.jpg" alt=""/> */}
                 <div className="myCarousel">
-                    <h3>Theo Sorel</h3>
-                    <h4>Designer</h4>
+                    <h3>Stéphane U.</h3>
+                    <h4>Avis recueilli par MeilleursAgents.com - Ref. MA2082222899</h4>
                     <p>
-                    I enjoy catching up with Fetch on my laptop, or on my phone when
-                    I'm on the go!
+                    Equipe professionnelle, dynamique, compétente, réactive, à l'écoute, dans l'accompagnement, nous recommandons fortement à tous les acheteurs et vendeurs d'un bien immobilier l'agence Homners, nous sommes très satisfaits de leurs prestations.
                     </p>
                 </div>
             </div>

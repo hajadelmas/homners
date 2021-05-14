@@ -11,9 +11,9 @@
 }
   
 .carousel .slide img {
-    width: 139px !important;
-    height: 139px;
-    border-radius: 50%;
+    // width: 139px !important;
+    // height: 139px;
+    // border-radius: 50%;
 
     @media screen and (max-width: 768px) {
         left: 50%;
@@ -53,7 +53,7 @@
 }
   
 .myCarousel h4 {
-    text-transform: uppercase;
+    // text-transform: uppercase;
     margin-top: 0;
     padding-top: 0;
     font-weight: 500;
@@ -97,7 +97,7 @@
     background: #000 !important;
     height: 50px !important;
     position: absolute;
-    top: 35% !important;
+    // top: 35% !important;
 }
   
 .App {
@@ -129,7 +129,7 @@
     }
   
     .carousel .slide img {
-      width: 24% !important;
+    //   width: 24% !important;
       border-radius: 50%;
     }
 }
