@@ -91,6 +91,7 @@ const tarifs = () => {
                     </ul>
                 </div>
             </div>
+            <p style={{ padding: '0 5em' }}>* À partir de.</p>
 
             <div className='tarif_contact'>
                 <h2>Vous avez des questions ?</h2>

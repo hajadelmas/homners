@@ -36,8 +36,9 @@ $normalText :  clamp(.8rem, 2vw, 1rem);
     .post_text_container {
         margin-top: 2em;
         padding: 0 4em;
+        // width: 100%;
         p {
-            text-align:justify;
+            // text-align:justify;
             font-size: $normalText;
         }
 
@@ -45,4 +46,5 @@ $normalText :  clamp(.8rem, 2vw, 1rem);
             padding: 0 2em;
         }
     }
+
 }

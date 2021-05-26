@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import { GatsbyImage } from 'gatsby-plugin-image'
 
+
 import './post_template.scss'
 
 
@@ -22,8 +23,8 @@ export default ({ data }) => {
           <GatsbyImage image={image.gatsbyImageData} alt='' className='img_box' />
         </div>
         
-        <div className='post_text_container'>
-          <p>{description}</p>
+        <div className='post_text_container' dangerouslySetInnerHTML={{ __html: data.datoCmsPost.descriptionNode.childMarkdownRemark.html, }}>
+          {/* { data.datoCmsPost.descriptionNode.childMarkdownRemark.html } */}
         </div>
         
       </section>
@@ -38,7 +39,12 @@ export const QueryPost = graphql`
       datoCmsPost(slug: { eq: $slug }) {
         slug
         titre
-        description
+        descriptionNode {
+          childMarkdownRemark {
+            html
+            timeToRead
+          }
+        }
         id
         dateAjout(formatString: "DD/MM/yyyy")
         image {

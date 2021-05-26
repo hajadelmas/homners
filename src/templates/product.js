@@ -52,11 +52,11 @@ var settings = {
   prevArrow: <SamplePrevArrow />,
 };
 
-const { titre, description, commune, photos, lienLeboncoin } = data.datoCmsProduct
+const { titre, description, commune, photos, lienLeboncoin, descriptionNode } = data.datoCmsProduct
 
   return (
     <Layout>
-      <SEO title={titre} description={description} />
+      <SEO title={titre + commune} description={description} />
       <div className='container_product'>
         <div className='container_slider'>
           <Slider {...settings} className='slider_custom'>
@@ -67,7 +67,9 @@ const { titre, description, commune, photos, lienLeboncoin } = data.datoCmsProdu
         <div className='container_desc'>
           <h1>{titre}</h1>
           <p>Commune : {commune}</p>
-          <p>{description}</p>
+          <div className='' dangerouslySetInnerHTML={{ __html: descriptionNode.childMarkdownRemark.html, }}>
+          
+          </div>
           <h3>Pour plus de détails, <Link to={lienLeboncoin}>Cliquez ici.</Link></h3>
         </div>
       </div>
@@ -83,13 +85,18 @@ export const query = graphql`
         titre
         commune
         id
-        description
         slug
         lienLeboncoin
         photos {
           gatsbyImageData(
             width: 300
           )
+        }
+        descriptionNode {
+          childMarkdownRemark {
+            html
+            timeToRead
+          }
         }
       }
     }

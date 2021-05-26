@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import DownloadFile from '../download/homners_download.pdf'
 
 import './Footer.scss'
 
@@ -23,6 +24,7 @@ const Footer = () => {
                     <Link to='/'>Accueil</Link>
                     <Link to='/services'>Services</Link>
                     <Link to='/tarifs'>Tarification</Link>
+                    <a href={DownloadFile} download>Télécharger tarification</a>
                     <Link to='/travaux'>Travaux</Link>
                     <Link to='/products'>Biens</Link>
                     <Link to='/posts'>Blog</Link>
