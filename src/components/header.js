@@ -3,10 +3,10 @@ import { window } from 'browser-monads'
 import PropTypes from "prop-types"
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
-import Dropdown from './Dropdown'
+// import Dropdown from './Dropdown'
 
 
-import { FaBars, FaTimes, FaCaretDown } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 
 import './Header.scss'
@@ -17,7 +17,7 @@ function Header({ siteTitle }) {
     const [click, setClick] = useState(false)
     const [button, setButton] = useState(true)
     const [navbar, setNavbar] = useState(false)
-    const [dropdown, setDropdown] = useState(false)
+    // const [dropdown, setDropdown] = useState(false)
 
 
     const handleClick = () => {
@@ -36,21 +36,21 @@ function Header({ siteTitle }) {
         }
     }
 
-    const MouseEnter = () => {
-        if(window.innerWidth < 960) {
-            setDropdown(false)
-        } else {
-            setDropdown(true)
-        }
-    }
+    // const MouseEnter = () => {
+    //     if(window.innerWidth < 960) {
+    //         setDropdown(false)
+    //     } else {
+    //         setDropdown(true)
+    //     }
+    // }
 
-    const MouseLeave = () => {
-        if(window.innerWidth < 960) {
-            setDropdown(false)
-        } else {
-            setDropdown(false)
-        }
-    }
+    // const MouseLeave = () => {
+    //     if(window.innerWidth < 960) {
+    //         setDropdown(false)
+    //     } else {
+    //         setDropdown(false)
+    //     }
+    // }
 
     window.addEventListener('resize', showButton)
     
@@ -79,12 +79,12 @@ function Header({ siteTitle }) {
                         <StaticImage
                             className='navbar-logo'
                             src="../images/logoHomnersFinal.png"
-                            // height={60}
-                            // width={55}
+                            // height={120}
+                            // width={600}
                             // quality={100}
                             formats={["AUTO", "WEBP", "AVIF"]}
                             alt="homners logo"
-                            style={{ width: `50%` }}
+                            style={{ width: `60%` }}
                             />
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
@@ -92,7 +92,7 @@ function Header({ siteTitle }) {
                         { click ? <FaTimes /> : <FaBars /> }
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                        <li className="nav-item" onMouseEnter={MouseEnter} onMouseLeave={MouseLeave}>
+                        <li className="nav-item">
                             <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
                                 {/* NOS SERVICES {button && <FaCaretDown className='CaretDown' />} */}
                                 NOS SERVICES
@@ -106,7 +106,7 @@ function Header({ siteTitle }) {
                         </li>
                         <li className="nav-item">
                             <Link to='/travaux' className='nav-links' onClick={closeMobileMenu}>
-                                NOS EMBELLISSEMENTS
+                                TRAVAUX
                             </Link>
                         </li>
                         <li className="nav-item">
@@ -119,16 +119,11 @@ function Header({ siteTitle }) {
                                 BLOG
                             </Link>
                         </li>
-                        {/* <li className="nav-item">
-                            <Link to='/partners' className='nav-links' onClick={closeMobileMenu}
-                            data-aos='fade-right'
-                            data-aos-duration='500'
-                            data-aos-delay='200'
-                            data-aos-anchor-placement='top top'
-                            >
-                                NOS PARTENAIRES
+                        <li className="nav-item">
+                            <Link to='/operations' className='nav-links' onClick={closeMobileMenu}>
+                                OPÉRATIONS FONCIÈRES
                             </Link>
-                        </li> */}
+                        </li>
                         <li className="nav-item">
                             <Link to='/contact-us' className='nav-links-mobile' onClick={closeMobileMenu}>
                                 CONTACT

@@ -1,0 +1,103 @@
+@import './global.scss';
+
+.operation {
+    margin-top: 4em;
+    text-align: center;
+    h1 {
+        font-size: $bigTitles;
+        color: $primary-color;
+        text-transform: uppercase;
+    }
+}
+
+.operation_container {
+    margin-top: 5em;
+    width: 100%;
+    
+
+    .articles_pos_ope {
+        display: flex;
+        justify-content: center;
+        height: 300px;
+
+        .articles_ope {
+            display: flex;
+            // flex-direction: row-reverse;
+            margin: 2em 0;
+            
+
+            img {
+                width: 300px;
+            }
+    
+            .ope_text_container {
+                background-color: $primary-color;
+                width: 400px;
+                // height: 200px;
+                padding: 1em 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+
+                h2 {
+                    text-align: center;
+                    margin: 0;
+                }
+    
+                a {
+                    text-decoration: none;
+                    color: $primary-color;
+                    margin-top: 1em;
+                    background-color: #fff;
+                    padding: .3em;
+
+                    // &:hover {
+                    //     border-bottom: 1px solid #fff;
+                    // }
+                }
+            }
+            
+        }
+        @media screen and (max-width: 500px) {
+            justify-content: center;
+            height: 450px;
+            .articles_ope {
+                flex-direction: column;
+
+                .ope_text_container {
+                    width: 300px;
+                }
+            }
+            
+        }
+
+    }
+
+    .articles_ope {
+        transition: .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+
+        @media screen and (max-width: 1024px) {
+            
+
+            .ope_text_container {
+                width: 200px;
+            }
+        }
+
+    }
+
+    .workInProgress{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0px;
+    }
+
+    
+}

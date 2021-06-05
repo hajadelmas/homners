@@ -9,7 +9,7 @@ import './post_template.scss'
 
 
 
-export default ({ data }) => {
+ const post = ({ data }) => {
 
   const { titre, description, dateAjout, image } = data.datoCmsPost
 
@@ -33,6 +33,8 @@ export default ({ data }) => {
     </Layout>
   )
 }
+
+export default post
 
 export const QueryPost = graphql`
     query MyPost($slug: String!) {

@@ -1,5 +1,5 @@
 import ImageOne from '../images/house4.jpg'
-import ImageTwo from '../images/house-2.jpg'
+// import ImageTwo from '../images/house-2.jpg'
 import ImageThree from '../images/house-3.jpg'
 
 

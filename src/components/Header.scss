@@ -51,8 +51,8 @@
 
 .nav-menu {
     display: grid;
-    grid-template-columns: repeat(6, auto);
-    grid-gap: 2em;
+    grid-template-columns: repeat(7, auto);
+    grid-gap: 1.5em;
     list-style: none;
     text-align: center;
     width: 100%;
@@ -170,7 +170,7 @@
       opacity: 1;
       transition: all 0.5s ease;
       padding: 0;
-      grid-gap: 2em;
+      grid-gap: 1em;
     }
   
     .nav-menu.active {

@@ -36,7 +36,7 @@ function SamplePrevArrow(props) {
 }
 
 
- const product = ({ data }) => {
+ const operation = ({ data }) => {
 //   const { title, date } = data.markdownRemark.frontmatter
 //   const __html = data.markdownRemark.html
 //   const { prev, next } = pageContext
@@ -52,11 +52,12 @@ var settings = {
   prevArrow: <SamplePrevArrow />,
 };
 
-const { titre, description, commune, photos, lienLeboncoin, descriptionNode } = data.datoCmsProduct
+const { titre, description, commune, photos, lienLeboncoin, descriptionNode } = data.datoCmsOperation
 
   return (
     <Layout>
       <SEO title={titre + commune} description={description} />
+
       <div className='container_product'>
         <div className='container_slider'>
           <Slider {...settings} className='slider_custom'>
@@ -79,21 +80,21 @@ const { titre, description, commune, photos, lienLeboncoin, descriptionNode } = 
   )
 }
 
-export default product
+export default operation
 
 export const query = graphql`
-    query MyProduct($slug: String!) {
-      datoCmsProduct(slug: { eq: $slug }) {
-        titre
+    query MyOperation($slug: String!) {
+      datoCmsOperation(slug: { eq: $slug }) {
         commune
-        id
-        slug
-        lienLeboncoin
+        description
         photos {
-          gatsbyImageData(
-            width: 300
-          )
+          gatsbyImageData(width: 300)
         }
+        prix
+        slug
+        titre
+        lienLeboncoin
+        id
         descriptionNode {
           childMarkdownRemark {
             html
@@ -102,5 +103,7 @@ export const query = graphql`
         }
       }
     }
+
+    
     
 `

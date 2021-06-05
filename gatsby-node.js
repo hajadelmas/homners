@@ -14,6 +14,7 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     const StoreTemplate = path.resolve("src/templates/product.js")
     const BlogTemplate = path.resolve("src/templates/post.js")
+    const OpeTemplate = path.resolve("src/templates/operation.js")
     resolve(
       graphql(`
         {
@@ -30,7 +31,14 @@ exports.createPages = ({ graphql, actions }) => {
                     slug
                   }
                 }
-              }
+            }
+            allDatoCmsOperation {
+                edges {
+                  node {
+                    slug
+                  }
+                }
+            }
         }
       `).then(result => {
         if (result.errors) {
@@ -49,6 +57,15 @@ exports.createPages = ({ graphql, actions }) => {
           createPage({
             path: `/posts/${data.node.slug}/`,
             component: BlogTemplate,
+            context: {
+              slug: data.node.slug
+            }
+          });
+        });
+        result.data.allDatoCmsOperation.edges.forEach(data => {
+          createPage({
+            path: `/operations/${data.node.slug}/`,
+            component: OpeTemplate,
             context: {
               slug: data.node.slug
             }
