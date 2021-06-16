@@ -14,6 +14,7 @@ module.exports = {
       resolve: 'gatsby-source-datocms',
       options: { apiToken: 'c9e4af15fd364a7dd10d7f4446945a' }
     },
+
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
