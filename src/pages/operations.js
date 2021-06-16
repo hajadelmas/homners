@@ -3,12 +3,12 @@ import Layout from '../components/layout'
 import { Link, graphql } from "gatsby"
 import { GatsbyImage } from 'gatsby-plugin-image'
 
-import '../styles/operation.scss'
+import '../styles/operations.scss'
 
 
 const Operations = ({ data }) => {
 
-    const [isReady, SetIsReady] = useState(false)
+    const [isReady, SetIsReady] = useState(true)
 
     const operations = data.allDatoCmsOperation.edges
 
