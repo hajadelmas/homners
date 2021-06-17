@@ -1,8 +1,21 @@
 
 @font-face {
-    font-family: "Nexa";
-    src: url("./fonts/Nexa-Bold.otf") format("otf"),
-           url("./fonts/Nexa-Light.otf") format("otf");
+    font-family: 'nexalight';
+    src: url('./fonts/nexa-light-webfont.woff2') format('woff2'),
+         url('./fonts/nexa-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'nexabold';
+    src: url('./fonts/nexa-bold-webfont.woff2') format('woff2'),
+         url('./fonts/nexa-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 $primary-color: #0099CE;
@@ -16,7 +29,11 @@ body {
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    font-family: "Nexa", sans-serif;
+    font-family: "nexalight", sans-serif;
+}
+
+h1, h2 {
+    font-family: "nexabold";
 }
 
 

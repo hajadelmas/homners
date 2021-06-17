@@ -34,14 +34,15 @@
         background: $primary-color;
     }
 
-    // .vertical-timeline-element-icon {
-    //     box-shadow: 0 0 0 4px $primary-color, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%);
-    // }
+    .timeline_container .date_class1 {
+        color: #fff;
+    }
 
     .date_class1 {
         // font-size: $bigTitles;
         text-transform: uppercase;
         color: $primary-color;
+
     }
 
     .date_class2 {
@@ -54,6 +55,21 @@
         // font-size: $bigTitles;
         text-transform: uppercase;
         color: #499f68;
+    }
+
+    .date_class1, .date_class2, .date_class3 {
+        @media screen and (max-width: 1024px) {
+            color: black;
+
+        }
+    }
+
+    .vertical-timeline-element-content .vertical-timeline-element-date, .vertical-timeline-element-content li {
+        margin: 1em 0 0;
+        line-height: 1.6;
+        font-size: 13px;
+        font-size: .8125rem;
+        font-weight: 500;
     }
 
 

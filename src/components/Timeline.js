@@ -19,7 +19,7 @@ const Timeline = () => {
 
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#0099CE', color: 'white' }}
+                    contentStyle={{ background: '#0099CE', color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                     date="avant la mise en vente"
                     dateClassName='date_class1'
@@ -46,15 +46,16 @@ const Timeline = () => {
                     date="avant la mise en vente"
                     dateClassName='date_class1'
                     iconStyle={{ background: '#0099CE', color: '#fff' }}
-                    icon={<MdAddAPhoto />}
+                    icon={<BsNewspaper />}
                 >
-                    <h3 className="vertical-timeline-element-title">PHOTOS PROFESSIONNELLES</h3>
-                    {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}
-                    <p>
-                    Diffuser des annonces avec des photos faites par un photographe augmente l'intérêt des prospects de plus de 70% !  des photos professionnelles (appareils aux normes + éclairage) du bien à vendre sont réalisées afin d’augmenter l'intérêt de votre annonce, ainsi qu'un shooting avec le photographe dans un deuxième temps.
-                    </p>
+                    <h3 className="vertical-timeline-element-title">FICHE TECHNIQUE DU BIEN</h3>
+                    {/* <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4> */}
+                    <ul>
+                        <li>Toutes les informations techniques de votre bien seront notées par l'expert sur une fiche descriptive lors du rendez-vous d'estimation afin d'avoir tous les éléments nécessaires à fournir aux potentiels acquéreurs.</li>
+                        <li>Cette fiche est transmise aux prospects avant chaque visite.</li>
+                    </ul>
                 </VerticalTimelineElement>
-
+                
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#0099CE', color: 'white' }}
@@ -62,15 +63,18 @@ const Timeline = () => {
                     date="avant la mise en vente"
                     dateClassName='date_class1'
                     iconStyle={{ background: '#0099CE', color: '#fff' }}
-                    icon={<BsNewspaper />}
+                    icon={<MdAddAPhoto />}
                 >
-                    <h3 className="vertical-timeline-element-title">FICHE TECHNIQUE DU BIEN</h3>
-                    {/* <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4> */}
-                    <p>
-                    Toutes les informations techniques de votre bien seront notées par l'expert sur une fiche descriptive lors du rendez-vous d'estimation afin d'avoir tous les éléments nécessaires à fournir aux potentiels acquéreurs.
-                    Cette fiche est transmise aux prospects avant chaque visite.
-                    </p>
+                    <h3 className="vertical-timeline-element-title">PHOTOS PROFESSIONNELLES</h3>
+                    {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}
+                    <ul>
+                        <li>Diffuser des annonces avec des photos faites par un photographe augmente l'intérêt des prospects de plus de 70% !</li>
+                        <li>Des photos professionnelles (appareils aux normes + éclairage) du bien à vendre sont réalisées afin d’augmenter l'intérêt de votre annonce</li>
+                        <li>Shooting avec le photographe dans un deuxième temps.</li>
+                      
+                    </ul>
                 </VerticalTimelineElement>
+
 
                 {/* <h1>Pendant la vente</h1> */}
 
@@ -87,9 +91,11 @@ const Timeline = () => {
                 >
                     <h3 className="vertical-timeline-element-title">DIFFUSION ANNONCE</h3>
                     {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}
-                    <p>
-                    Une fois validée, les annonces sont automatiquement diffusées sur les sites Internet principaux. Aujourd’hui, 95% des acheteurs trouvent leurs biens en naviguant sur des sites d’annonces immobilières. De plus, votre annonce sera automatiquement exposée sur la vitrine de notre agence en centre ville de Bordeaux pour une visibilité maximale.
-                    </p>
+                    <ul>
+                        <li>Une fois validée, les annonces sont automatiquement diffusées sur les sites Internet principaux.</li>
+                        <li>Aujourd’hui, 95% des acheteurs trouvent leurs biens en naviguant sur des sites d’annonces immobilières.</li>
+                        <li>De plus, votre annonce sera automatiquement exposée sur la vitrine de notre agence en centre ville de Bordeaux pour une visibilité maximale.</li>
+                    </ul>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
@@ -154,9 +160,16 @@ const Timeline = () => {
                 >
                     <h3 className="vertical-timeline-element-title">NEGOCIATION DES OFFRES</h3>
                     {/* <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4> */}
-                    <p>
-                    Votre expert local s'occupe de la négociation avec l’acheteur. Le processus de vente peut s’avérer compliqué et stressant ? Le prix proposé est-il juste ? Quelle contre-proposition formuler ? Comment rédiger le compromis ? quelles pièces sont nécessaires au notaire ? tous ces éléments sont à prendre très au sérieux au moment de conclure une vente.
-                    </p>
+                    <p>Votre expert local s'occupe de la négociation avec l’acheteur. </p>
+                    <p>Le processus de vente peut s’avérer compliqué et stressant, c’est pourquoi :</p>
+                    <ul>
+                        <li>Nous vérifions si le prix est juste.</li>
+                        <li>Si il faut formuler une contre-proposition.</li>
+                        <li>La rédaction du compromis.</li>
+                        <li>Vérification des pièces nécessaires au notaire.</li>
+                    </ul>
+
+                    <p>tous ces éléments sont à prendre très au sérieux au moment de conclure une vente.</p>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
@@ -170,10 +183,11 @@ const Timeline = () => {
                 >
                     <h3 className="vertical-timeline-element-title">CONSTITUTION DES DOSSIERS DE VENTE</h3>
                     {/* <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4> */}
-                    <p>
-                    Une fois l'offre d'achat signée, nous établissons avec vous la liste des documents à récupérer afin que le passage chez le notaire se fasse de la manière la plus simple possible.
-                    (dossier de diagnostics, titre de propriété etc...)
-                    </p>
+                    <ul>
+                        <li>Une fois l'offre d'achat signée, nous établissons avec vous la liste des documents à récupérer.</li>
+                        <li>Passage chez le notaire fluide et simple.</li>
+                        <li>(dossier de diagnostics, titre de propriété etc...)</li>
+                    </ul>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
@@ -187,9 +201,11 @@ const Timeline = () => {
                 >
                     <h3 className="vertical-timeline-element-title">SUIVI SUR MESURE</h3>
                     {/* <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4> */}
-                    <p>
-                    Un expert local vous accompagne durant toute la durée de la commercialisation. Il est disponible par téléphone (sms compris) pour répondre à toutes vos questions et vous assister jusqu’à la signature chez le notaire.
-                    </p>
+                    <ul>
+                        <li>Un expert local vous accompagne durant toute la durée de la commercialisation.</li>
+                        <li>Il est disponible par téléphone (sms compris) pour répondre à toutes vos questions et vous assister jusqu’à la signature chez le notaire.</li>
+                     
+                    </ul>
                 </VerticalTimelineElement>
 
 
