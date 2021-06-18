@@ -18,7 +18,7 @@ const Operations = ({ data }) => {
             <div className='operation'>
                 <h1>Opérations foncières</h1>
                 <h3>Que faisons nous ?</h3>
-                <p>Notre société dispose d’un filiale d’investissement englobant les métiers de marchand de biens et de promoteurs immobilier .</p>
+                <p>Notre société dispose d’une filiale d’investissement englobant les métiers de marchand de biens et de promoteur immobilier .</p>
                 <p>Nous achetons maisons, immeubles, terrains, entrepôts dans le but de créer des logements et d’optimiser les surfaces.</p>
             </div>
 
