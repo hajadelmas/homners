@@ -10,7 +10,7 @@ export const SliderData = [
         desc: 'L\'immobilier à prix fixe',
         path: '/contact-us',
         label: 'Nous contacter',
-        image: ImageThree,
+        image: ImageTwo,
         alt: 'Homners'
     },
     {
@@ -18,7 +18,7 @@ export const SliderData = [
         desc: 'L\'immobilier à prix fixe',
         path: '/contact-us',
         label: 'Nous contacter',
-        image: ImageTwo,
+        image: ImageThree,
         alt: 'House'
     },
     {
