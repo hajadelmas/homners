@@ -1,5 +1,5 @@
 import ImageOne from '../images/house4.jpg'
-import ImageTwoo from '../images/homners2.jpg'
+import ImageTwo from '../images/homners_devant.jpeg'
 import ImageThree from '../images/house-3.jpg'
 
 
@@ -18,7 +18,7 @@ export const SliderData = [
         desc: 'L\'immobilier à prix fixe',
         path: '/contact-us',
         label: 'Nous contacter',
-        image: ImageTwoo,
+        image: ImageTwo,
         alt: 'House'
     },
     {
