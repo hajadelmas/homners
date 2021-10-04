@@ -31,6 +31,15 @@ const Footer = () => {
                     <Link to='/operations'>Opérations</Link>
                     <Link to='/contact-us'>Contact</Link>
                 </div>
+                <div className='container_horaires'>
+                    <h3>Horaires d'ouvertures</h3>
+                    <span>Lundi 9h - 12h30 & 14h - 19h</span>
+                    <span>Mardi 9h - 12h30 & 14h - 19h</span>
+                    <span>Mercredi 9h - 12h30 & 14h - 19h</span>
+                    <span>Jeudi 9h - 12h30 & 14h - 19h</span>
+                    <span>Vendredi 9h - 12h30 & 14h - 19h</span>
+                    <span>Samedi 9h - 12h30</span>
+                </div>
                 <div className='mysite'>
                     Copyright © {new Date().getFullYear()}. Tous droits réservés. <a href="https://www.studio-haja.fr" target='_blank' rel="noreferrer"> Créé par Studio Haja.</a>
                 </div>

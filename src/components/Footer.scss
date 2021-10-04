@@ -59,6 +59,18 @@
             }
         }
 
+        .container_horaires {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2em;
+
+            span {
+                margin-bottom: .5em;
+            }
+        }
+
 
         .mysite {
             // position: absolute;
