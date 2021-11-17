@@ -29,7 +29,7 @@ export default function Display({ amount, years }) {
     //     }
     //   };
 
-    const total = (((amount * years)/100)-950).toFixed(0)
+    const total = (((amount * years)/100)-8990).toFixed(0)
     
     const calculateMonthlyRepayment = () => {
         // let { amount, years } = this.props;

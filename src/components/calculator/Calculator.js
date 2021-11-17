@@ -9,8 +9,8 @@ import Display from './Display'
 
 function App() {
 
-  const [amountValue, setAmountValue] = useState(70000)
-  const [yearsValue, setYearsValue] = useState(3)
+  const [amountValue, setAmountValue] = useState(150000)
+  const [yearsValue, setYearsValue] = useState(7)
 
 
   const handleAmountChange = (value) => {
@@ -39,7 +39,7 @@ function App() {
       <InputRange
         step={0.1}
         maxValue={10}
-        minValue={0}
+        minValue={7}
         value={yearsValue}
         onChange={handleYearChange}
       />
