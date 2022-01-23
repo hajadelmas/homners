@@ -3,10 +3,11 @@ import { window } from 'browser-monads'
 import PropTypes from "prop-types"
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
+
 // import Dropdown from './Dropdown'
 
 
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaUserCircle } from "react-icons/fa";
 
 
 import './Header.scss'
@@ -129,7 +130,15 @@ function Header({ siteTitle }) {
                                 CONTACT
                             </Link>
                         </li>
+                        
                     </ul>
+                    
+                    {button && <button className=' btn btn--outline'>
+                        <FaUserCircle style={{ marginRight: "1em" }}/>
+                        <Link to='https://www.app-homners.com'>ESPACE CLIENT</Link>
+                    
+                    </button>}
+
                     {button && <button className=' btn btn--outline'><Link to='/contact-us'>ESTIMATION GRATUITE / CONTACT</Link></button>}
                 </div>
             </nav>
