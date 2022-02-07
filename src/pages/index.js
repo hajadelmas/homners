@@ -197,6 +197,14 @@ const IndexPage = ({ data }) => {
       </div>
     </section>
 
+    <section className="mecene">
+      <StaticImage
+        className='carre_image'
+        src="../images/mecene.png"
+        alt="yo"
+      />
+    </section>
+
     <section className="testimonials">
       <div className="home_padding">
         <h1 data-aos='fade-down' data-aos-once='true'>Avis clients</h1>

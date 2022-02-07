@@ -214,3 +214,16 @@
         text-align: center;
     }
 }
+
+.mecene {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .gatsby-image-wrapper{
+       max-width: 30%;
+    }
+    img {
+        max-width: 100%;
+    }
+}
