@@ -126,10 +126,15 @@ function Header({ siteTitle }) {
                             </Link>
                         </li>
                         <li className="nav-item">
+                            <Link to='/engagements' className='nav-links' onClick={closeMobileMenu}>
+                                ENGAGEMENTS
+                            </Link>
+                        </li>
+                        {/* <li className="nav-item">
                             <Link to='/contact-us' className='nav-links-mobile' onClick={closeMobileMenu}>
                                 CONTACT
                             </Link>
-                        </li>
+                        </li> */}
                         
                     </ul>
                     
