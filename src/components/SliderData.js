@@ -10,14 +10,6 @@ export const SliderData = [
         desc: 'L\'immobilier à prix fixe',
         path: '/contact-us',
         label: 'Nous contacter',
-        image: ImageTwo,
-        alt: 'Homners'
-    },
-    {
-        title: 'HOMNERS',
-        desc: 'L\'immobilier à prix fixe',
-        path: '/contact-us',
-        label: 'Nous contacter',
         image: ImageThree,
         alt: 'House'
     },
@@ -28,6 +20,14 @@ export const SliderData = [
         label: 'Nous contacter',
         image: ImageOne,
         alt: 'House'
+    },
+    {
+        title: 'HOMNERS',
+        desc: 'L\'immobilier à prix fixe',
+        path: '/contact-us',
+        label: 'Nous contacter',
+        image: ImageTwo,
+        alt: 'Homners'
     }
 ]
 
