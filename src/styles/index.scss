@@ -227,3 +227,21 @@
         max-width: 100%;
     }
 }
+
+.agent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .gatsby-image-wrapper{
+       max-width: 20%;
+    }
+    img {
+        max-width: 100%;
+    }
+    p {
+        width: 30%;
+        text-align: center;
+    }
+}

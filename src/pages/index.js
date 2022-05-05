@@ -205,6 +205,15 @@ const IndexPage = ({ data }) => {
       />
     </section>
 
+    <section className="agent">
+      <StaticImage
+        className='carre_image'
+        src="../images/agent.png"
+        alt="yo"
+      />
+      <p>CADUCE de notre profession ! Voici le signe différenciant d'un agent immobilier diplômé d'un mandataire ou conseiller indépendant. Gage de professionnalisme et compétences professionnelles. </p>
+    </section>
+
     <section className="testimonials">
       <div className="home_padding">
         <h1 data-aos='fade-down' data-aos-once='true'>Avis clients</h1>
