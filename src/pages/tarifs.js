@@ -11,19 +11,20 @@ const tarifs = () => {
         <Layout>
             <SEO title="Tarifs" /> 
 
-            <h1>Page en maintenance</h1>
-            {/* <div className="tarifs">
+            {/* <h1>Page en maintenance</h1> */}
+             <div className="tarifs">
                 <h1 data-aos='fade-down' data-aos-once='true'>Nos Tarifs</h1>
                 <h3 data-aos='fade-down' data-aos-delay='200' data-aos-once='true'>Estimation gratuite, valable pour tout type de biens sans engagement.</h3>
                 <div data-aos='fade-down' data-aos-delay='250' data-aos-once='true'>
-                    <p>Chez Homners, <strong>les honoraires d’agence</strong> « forfait » ne sont à payer par l’acquéreur qu’une fois que le <strong>vente</strong> sera <strong>entériné par l’acte authentique</strong> chez le notaire. <strong>Ces honoraires nous sont versé directement par l’étude notariale</strong>, exactement comme chez les agences de franchises. (Laforest, Guy hoquet, Century 21….)</p>
+                    {/* <p>Chez Homners, <strong>les honoraires d’agence</strong> « forfait » ne sont à payer par l’acquéreur qu’une fois que le <strong>vente</strong> sera <strong>entériné par l’acte authentique</strong> chez le notaire. <strong>Ces honoraires nous sont versé directement par l’étude notariale</strong>, exactement comme chez les agences de franchises. (Laforest, Guy hoquet, Century 21….)</p>
                     <p>Nous apportons également des services complémentaires pour mettre en valeur votre bien, <strong>à nos frais pour apporter une revalorisation et donc optimiser le prix de vente</strong>.</p>
-                    <p>L'estimation de votre maison ou votre appartement est gratuite, et vous décidez ensuite de la manière dont nous allons travailler ensemble, en fonction de vos besoins et de vos attentes.</p>
+                    <p>L'estimation de votre maison ou votre appartement est gratuite, et vous décidez ensuite de la manière dont nous allons travailler ensemble, en fonction de vos besoins et de vos attentes.</p> */}
+                    <p> Nos honoraires de transaction sont de 5% TTC du prix de vente à la charge du vendeur, avec un minimum de 7500€ TTC. </p>
                 </div>
                 
             </div>
 
-            <div className="container_carre">
+            {/* <div className="container_carre">
                 <div className="carre_couleur">
                     <h1>Forfait Eco <span>1.990€*</span> ttc</h1>
                     <h3>Le moins cher de France</h3>
@@ -90,7 +91,7 @@ const tarifs = () => {
                     </ul>
                 </div>
             </div>
-            <p style={{ padding: '0 5em' }}>* À partir de.</p>
+            <p style={{ padding: '0 5em' }}>* À partir de.</p> */}
 
             <div className='tarif_contact'>
                 <h2>Vous avez des questions ?</h2>
